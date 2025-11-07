@@ -110,3 +110,15 @@ But for a cleaner URL (`BinhBenTran.github.io`), use the `BinhBenTran.github.io`
 - Your `index.html` will be the homepage
 - Changes may take 1-10 minutes to appear after pushing
 
+//FIXME
+Create the repository
+Go to https://github.com/new
+Repository name: BinhBenTran.github.io (exact name)
+Make it Public
+Do not initialize with README, .gitignore, or license
+Click "Create repository"
+After you create it, I'll push your files.
+Alternatively, if you want to use the existing BinhBenTran repository, I can update the remote to point there. The URL will be BinhBenTran.github.io/BinhBenTran/ instead of BinhBenTran.github.io.
+Which do you prefer?
+Create BinhBenTran.github.io (clean URL)
+Use the existing BinhBenTran repository (longer URL)
