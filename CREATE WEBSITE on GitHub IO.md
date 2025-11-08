@@ -56,7 +56,7 @@ git commit -m "Add interactive RF & Microwave Engineer CV with radar and satelli
 
 ### 7. Push to GitHub
 ```bash
-git branch -M main
+# git branch -M main
 git push -u origin main
 ```
 
