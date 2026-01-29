@@ -4,9 +4,9 @@ A modern, interactive CV website featuring three specialized resume pages, each 
 
 ## 🌐 Live Demos
 
-- **Technical Support Engineer (IT):** https://bentran.vercel.app/TSE
-- **RF & Microwave Engineer (ECEn):** https://bentran.vercel.app/ECEN
-- **Customer Service Specialist:** https://bentran.vercel.app/CSS
+- **Technical Support Engineer (IT):** https://BenBinhTran.github.io/TSE.html
+- **RF & Microwave Engineer (ECEn):** https://BenBinhTran.github.io/ECEN.html
+- **Customer Service Specialist:** https://BenBinhTran.github.io/CSS.html
 
 ## 📄 CV Pages Overview
 
@@ -79,7 +79,7 @@ BenTran_CV/
 ├── ECEN.html             # RF & Microwave Engineer CV
 ├── CSS.html              # Customer Service Specialist CV
 ├── index.html            # Landing page
-├── vercel.json           # Vercel deployment configuration
+├── sky.jpg               # Background image for Open Graph
 ├── Resumes/              # PDF files directory
 │   ├── TranBinhBen_CV_TSE.pdf
 │   ├── TranBinhBen_CV_ECEN.pdf
@@ -88,40 +88,33 @@ BenTran_CV/
 └── Update290126.md       # Detailed update report
 ```
 
+
 ## 🚀 Deployment
 
 ### Prerequisites
 Ensure all PDF files are in the `Resumes/` folder with correct names.
 
-### Deploy to Vercel
+### Deploy to GitHub Pages
 
-1. **Connect to Vercel:**
-   ```bash
-   vercel
-   ```
-
-2. **Or push to GitHub:**
+1. **Push to GitHub:**
    ```bash
    git add .
    git commit -m "Update CV pages"
-   git push
+   git push origin main
    ```
 
-3. **Vercel will automatically deploy** if connected to your repository.
+2. **GitHub Pages will automatically deploy** from the main branch.
 
-### Routing Configuration
+3. **Access your site at:**
+   - Main site: https://BenBinhTran.github.io
+   - Individual pages: 
+     - https://BenBinhTran.github.io/TSE.html
+     - https://BenBinhTran.github.io/ECEN.html
+     - https://BenBinhTran.github.io/CSS.html
 
-The `vercel.json` file configures clean URLs:
+### GitHub Pages Configuration
 
-```json
-{
-  "rewrites": [
-    { "source": "/TSE", "destination": "/TSE.html" },
-    { "source": "/ECEN", "destination": "/ECEN.html" },
-    { "source": "/CSS", "destination": "/CSS.html" }
-  ]
-}
-```
+GitHub Pages serves HTML files directly. No additional routing configuration needed - just use the `.html` extensions in your URLs.
 
 ## 📋 Features by Section
 
@@ -149,8 +142,8 @@ The `vercel.json` file configures clean URLs:
 ## 👨‍💻 Author
 
 **Bình (Ben) Trần**
-- 📧 Email: bentran.sgvn@gmail.com
-- 🌐 Website: https://bentran.vercel.app
+- 📧 Email: TranBinhBen@gmail.com
+- 🌐 Website: https://BenBinhTran.github.io
 - 🚀 Portfolio: https://phoenixflix.vercel.app
 - 💻 GitHub: https://github.com/PhoenixWeaver
 - 📍 Location: Ho Chi Minh City, Vietnam
@@ -162,10 +155,11 @@ This project is personal portfolio material. Design and code structure can be us
 ## 🔄 Recent Updates
 
 **January 29, 2026:**
+- ✅ Migrated from Vercel to GitHub Pages deployment
+- ✅ Updated all URLs from bentran.vercel.app to BenBinhTran.github.io
 - ✅ Created three specialized CV pages (TSE, ECEN, CSS)
 - ✅ Updated all meta tags and SEO optimization
 - ✅ Configured PDF download links
-- ✅ Added Vercel routing configuration
 - ✅ Made Core Competencies symmetric (3×2 grid for CSS)
 - ✅ Added education specializations
 - ✅ Updated README with comprehensive documentation
