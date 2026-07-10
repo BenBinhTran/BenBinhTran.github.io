@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Tran - Planning & Engineering Agent | CV</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Ben Tran - Planning & Engineering Agent CV. Experienced in operations-focused engineering, SLA/KPI management, root-cause analysis, and workflow automation.">
+    <meta name="keywords"
+        content="Planning & Engineering, Operations, SLA, KPI, FedEx, Ben Tran, Automation, Power Automate, ServiceNow, Ho Chi Minh City">
+    <meta name="author" content="Ben Tran">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bentran.vercel.app/PE">
+    <meta property="og:title" content="Ben Tran - Planning & Engineering Agent">
+    <meta property="og:description"
+        content="Operations-focused engineer with expertise in Planning & Engineering support, SLA/KPI management, and automation.">
+    <meta property="og:image" content="https://bentran.vercel.app/sky.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://phoenixflix.vercel.app/images/PhoenixFlix.jpeg">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --dark-bg: #0f0f23;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --text-primary: #ffffff;
+            --text-secondary: #a0aec0;
+            --text-accent: #4facfe;
+            --success-color: #10b981;
+            --shadow-glow: 0 8px 32px 0 rgba(102, 126, 234, 0.37);
+        }
+
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        /* Animated Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(79, 172, 254, 0.1) 0%, transparent 50%);
+            z-index: -1;
+            animation: backgroundShift 20s ease infinite;
+        }
+
+        @keyframes backgroundShift {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        /* Floating particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: rgba(79, 172, 254, 0.5);
+            border-radius: 50%;
+            animation: float 15s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            margin-bottom: 60px;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 4px;
+            background: var(--primary-gradient);
+            border-radius: 2px;
+        }
+
+        .name {
+            font-size: 4rem;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .job-title {
+            font-size: 1.8rem;
+            color: var(--text-accent);
+            font-weight: 600;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow);
+            border-color: rgba(102, 126, 234, 0.5);
+        }
+
+        .contact-item a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item:hover a {
+            color: var(--text-accent);
+        }
+
+        /* Download Button */
+        .download-section {
+            text-align: center;
+            margin: 40px 0;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: var(--primary-gradient);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-glow);
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 40px 0 rgba(102, 126, 234, 0.5);
+        }
+
+        .download-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Section Styles */
+        .section {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 1s ease;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            border-color: rgba(102, 126, 234, 0.3);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-gradient);
+            border-radius: 2px;
+        }
+
+        /* Professional Summary */
+        .summary-text {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-category {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            border-color: rgba(79, 172, 254, 0.5);
+            box-shadow: 0 8px 24px rgba(79, 172, 254, 0.2);
+        }
+
+        .skill-category h3 {
+            color: var(--text-accent);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            padding: 8px 16px;
+            background: rgba(79, 172, 254, 0.1);
+            border: 1px solid rgba(79, 172, 254, 0.3);
+            border-radius: 20px;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: rgba(79, 172, 254, 0.2);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-gradient);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -47px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--primary-gradient);
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.8);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        .timeline-header {
+            margin-bottom: 15px;
+        }
+
+        .timeline-title {
+            font-size: 1.4rem;
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .timeline-company {
+            font-size: 1.1rem;
+            color: var(--text-accent);
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .timeline-date {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .timeline-content {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .timeline-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline-content li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .timeline-content li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--text-accent);
+            font-size: 1.2rem;
+        }
+
+        /* Education Cards */
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .education-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(118, 75, 162, 0.5);
+            box-shadow: 0 8px 24px rgba(118, 75, 162, 0.3);
+        }
+
+        .degree {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .institution {
+            font-size: 1.1rem;
+            color: var(--text-accent);
+            margin-bottom: 8px;
+        }
+
+        .edu-date {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Project Card Styling */
+        .project-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateX(10px);
+            border-color: rgba(79, 172, 254, 0.5);
+            box-shadow: -8px 0 24px rgba(79, 172, 254, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container { padding: 30px 15px; max-width: 100%; }
+            .name { font-size: 2.5rem; }
+            .job-title { font-size: 1.3rem; }
+            .contact-info { flex-direction: column; align-items: center; gap: 15px; }
+            .contact-item { max-width: 90%; word-wrap: break-word; }
+            .section { padding: 20px 15px; }
+            .section-title { font-size: 1.5rem; }
+            .skills-grid, .education-grid { grid-template-columns: 1fr; gap: 15px; }
+            .skill-category { padding: 20px 15px; }
+            .timeline { padding-left: 30px; }
+            .timeline-item { padding-left: 20px; }
+        }
+
+        /* Print Styles */
+        @media print {
+            body { background: white; color: black; }
+            .download-section, .particles, .nav-links { display: none; }
+            .section { page-break-inside: avoid; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="name">TRẦN BÌNH BEN</h1>
+            <h2 class="job-title">Planning & Engineering Agent</h2>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📱</span>
+                    <a href="tel:+84822468722">+84 822 468 722</a>
+                </div>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:TranBinhBen@gmail.com">TranBinhBen@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <a href="https://BenBinhTran.github.io" target="_blank">BenBinhTran.github.io</a>
+                </div>
+                <div class="contact-item">
+                    <span>🚀</span>
+                    <a href="https://phoenixflix.vercel.app" target="_blank">phoenixflix.vercel.app</a>
+                </div>
+                <div class="contact-item">
+                    <span>🔗</span>
+                    <a href="https://github.com/PhoenixWeaver" target="_blank">github.com/PhoenixWeaver</a>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Ho Chi Minh City, Vietnam</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Download Section -->
+        <div class="download-section">
+            <a href="Resumes/BenBenTran_CV_PE.pdf" download class="download-btn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                    </path>
+                </svg>
+                Download PDF CV
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links"
+            style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin: 40px 0; animation: fadeInUp 1s ease 0.8s both;">
+            <a href="index.html"
+                style="padding: 12px 24px; background: var(--card-bg); border: 2px solid var(--card-border); border-radius: 50px; color: var(--text-primary); text-decoration: none; font-weight: 600; transition: all 0.3s ease; backdrop-filter: blur(10px); font-size: 0.9rem;">
+                🏠 Home
+            </a>
+            <a href="PE.html"
+                style="padding: 12px 24px; background: var(--primary-gradient); border: 2px solid transparent; border-radius: 50px; color: var(--text-primary); text-decoration: none; font-weight: 600; transition: all 0.3s ease; backdrop-filter: blur(10px); font-size: 0.9rem; box-shadow: var(--shadow-glow);">
+                ⚙️ P&E Agent CV
+            </a>
+            <a href="TSE.html"
+                style="padding: 12px 24px; background: var(--card-bg); border: 2px solid var(--card-border); border-radius: 50px; color: var(--text-primary); text-decoration: none; font-weight: 600; transition: all 0.3s ease; backdrop-filter: blur(10px); font-size: 0.9rem;">
+                💼 Tech Support CV
+            </a>
+            <a href="ECEN.html"
+                style="padding: 12px 24px; background: var(--card-bg); border: 2px solid var(--card-border); border-radius: 50px; color: var(--text-primary); text-decoration: none; font-weight: 600; transition: all 0.3s ease; backdrop-filter: blur(10px); font-size: 0.9rem;">
+                📡 RF Engineer CV
+            </a>
+            <a href="CSS.html"
+                style="padding: 12px 24px; background: var(--card-bg); border: 2px solid var(--card-border); border-radius: 50px; color: var(--text-primary); text-decoration: none; font-weight: 600; transition: all 0.3s ease; backdrop-filter: blur(10px); font-size: 0.9rem;">
+                🎯 Customer Service CV
+            </a>
+            <a href="TEFL.html"
+                style="padding: 12px 24px; background: var(--card-bg); border: 2px solid var(--card-border); border-radius: 50px; color: var(--text-primary); text-decoration: none; font-weight: 600; transition: all 0.3s ease; backdrop-filter: blur(10px); font-size: 0.9rem;">
+                🌍 TEFL Teacher CV
+            </a>
+            <a href="credentials.html"
+                style="padding: 12px 24px; background: var(--card-bg); border: 2px solid var(--card-border); border-radius: 50px; color: var(--text-primary); text-decoration: none; font-weight: 600; transition: all 0.3s ease; backdrop-filter: blur(10px); font-size: 0.9rem;">
+                🏆 Credentials
+            </a>
+        </div>
+
+        <!-- Summary & Objective -->
+        <section class="section">
+            <h2 class="section-title">Summary & Objective</h2>
+            <p class="summary-text">
+                Operations-focused engineer with Customer Experience (RPI) and 20+ years of technical and operations experience. Skilled in Planning & Engineering support for First/Last Mile: SLA/KPI management, root-cause analysis, continuous improvement, and cross-functional coordination with stations/PUD/inbound teams. Strong analytics (Excel/Power Query, Power BI basics, SQL), case and workflow systems (CEBS, ServiceNow, SharePoint), and lightweight internal tooling (JavaScript, Power Automate). Bilingual English/Vietnamese; U.S. education and professional experience.
+            </p>
+        </section>
+
+        <!-- Core Competencies -->
+        <section class="section">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Operations & IE</h3>
+                    <div class="timeline-content">
+                        <ul>
+                            <li><strong>Planning & Engineering:</strong> First/Last Mile support, RPI monitoring, SLA recovery, SOP design</li>
+                            <li><strong>Continuous Improvement:</strong> RCA, SPC, KPI dashboards, audit-ready documentation</li>
+                            <li><strong>Bilingual Communication:</strong> Professional EN/VN, privacy-aware processes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data & Automation</h3>
+                    <div class="timeline-content">
+                        <ul>
+                            <li><strong>Analytics:</strong> Excel (Power Query, pivots), Power BI (basic), SQL (PostgreSQL)</li>
+                            <li><strong>Systems:</strong> CEBS, ServiceNow, SharePoint, Office 365</li>
+                            <li><strong>Automation:</strong> Power Automate (cloud flows), JavaScript/HTML/CSS, REST APIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Customer Experience Agent (RPI Creator & Monitor)</h3>
+                        <div class="timeline-company">FedEx Vietnam | Ho Chi Minh City, Vietnam</div>
+                        <div class="timeline-date">02/2026 – Present</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Create RPI C‑MOD control numbers in CEBS; generate control IDs (C‑####) and submit SharePoint entries to trigger VN/EN consignee notifications.</li>
+                            <li>Validate AWB (12‑digit) and shipment data; extract shipper/consignee contacts using Copilot/OCR; attach required documents (RPI form, AWB, commercial docs, MSDS).</li>
+                            <li>Maintain full case lifecycle: log and monitor in SharePoint/Excel and ServiceNow/CEBS; update statuses, timestamps, and owner handoffs through pickup/closure.</li>
+                            <li>Manage customer communications in English and Vietnamese with standardized templates; set clear SLA expectations and provide service recovery updates.</li>
+                            <li>Proactively monitor &#8220;Picked Coop RPI&#8221; and CEBS queues; flag SLA risks and escalate per matrix (Station Sup &#8594; Ops Manager &#8594; Regional RPI) with recommended actions.</li>
+                            <li>Coordinate with station, PUD, and inbound clearance teams to close documentation gaps, arrange re&#8209;dispatch, and support CCTV/bag checks or DG approvals.</li>
+                            <li>Author/maintain templates, case&#8209;note macros, and escalation notes to improve handoffs and reporting consistency.</li>
+                            <li>Use Power Query/Excel and SharePoint logs to track aging, pickup&#8209;within&#8209;SLA %, and top exception types; present trends and propose process improvements.</li>
+                            <li>Implemented Power Automate flows to consolidate AWB rows from SharePoint, split multi&#8209;recipient fields, aggregate AWBs per recipient, and send one consolidated HTML email&#8212;reducing manual work and improving notification accuracy.</li>
+                            <li>Ensure privacy and DG compliance in all communications and workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Customer Experience Agent / Supplies Coordination</h3>
+                        <div class="timeline-company">FedEx Vietnam | Ho Chi Minh City, Vietnam</div>
+                        <div class="timeline-date">02/2026 – 05/2026</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Collaborated with Malaysia and Singapore teams to streamline supplies ordering/delivery.</li>
+                            <li>Documented and standardized supplies procedures (order placement, tracking, escalation), reducing duplicate/missing orders.</li>
+                            <li>Developed practical guidelines for typical order quantities, item locations, and special/bulk request handling.</li>
+                            <li>Instituted a &#8220;Data Not Found&#8221; check process for missing/delayed orders; verified dispatch attempts and escalated unresolved account issues to Ops.</li>
+                            <li>Authored bilingual email templates for booking confirmations, order status, and updates; monitored order lifecycle to prevent duplicates and optimize allocation.</li>
+                            <li>Acted as a point of contact for supplies inquiries using digital ordering forms and coordinated multi-stakeholder exceptions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Customer Service Partner Specialist</h3>
+                        <div class="timeline-company">Concentrix | Ho Chi Minh City, Vietnam</div>
+                        <div class="timeline-date">2024 – 2025</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li><strong>B2B Support:</strong> Triaged technical issues and escalated platform defects to engineering</li>
+                            <li><strong>Billing Support:</strong> Coordinated financial inquiries and managed high-priority dispute resolution</li>
+                            <li><strong>Incident Analysis:</strong> Logged and categorized root causes in ServiceNow for audit readiness</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Research Assistant</h3>
+                        <div class="timeline-company">Brigham Young University / Linear Signal Inc. (Raytheon-sponsored) | Provo, UT</div>
+                        <div class="timeline-date">2010 &#8211; 2014</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Designed/simulated a high&#8209;efficiency DRA antenna array for SATCOM; achieved ~10% aperture efficiency improvement.</li>
+                            <li>Characterized radome materials at microwave frequencies and high temperatures; provided performance data for design.</li>
+                            <li>Contributed to active steerable antenna arrays with dual circular polarization (RHCP/LHCP).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Research Assistant</h3>
+                        <div class="timeline-company">University of Arkansas (MOLICS Lab) | Fayetteville, AR</div>
+                        <div class="timeline-date">2005 &#8211; 2010</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Applied microwave imaging for non&#8209;contact object detection; fabricated/tested RF devices under strict lab protocols.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Quality Control &amp; Assurance Specialist</h3>
+                        <div class="timeline-company">Black Diamond & Kizik | USA</div>
+                        <div class="timeline-date">2022 – 2023</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li><strong>Engineering Quality:</strong> Built test models; conducted SPC analyses and failure investigations</li>
+                            <li><strong>Production Monitoring:</strong> Developed fixtures that improved monitoring; maintained QMS documentation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Shift Lead / Sales Manager</h3>
+                        <div class="timeline-company">AutoZone Inc. | USA</div>
+                        <div class="timeline-date">2018 – 2020</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Managed on&#8209;duty store operations; supervised a team of 6+ with safety-first policies for zero incidents.</li>
+                            <li>Coordinated commercial/hub order fulfillment for corporate accounts; prioritized dispatch to meet delivery windows and SLAs.</li>
+                            <li>Ran daily KPI huddles on on-time %, cycle time, pick accuracy; optimized cash flow and inventory processes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Projects -->
+        <section class="section">
+            <h2 class="section-title">Technical Projects</h2>
+            <div class="project-card">
+                <h3 style="color: var(--text-accent); font-size: 1.3rem; margin-bottom: 10px;">Order Automation System — Logistics Supplies Management</h3>
+                <div class="timeline-date" style="margin-bottom: 15px;">Jun 2026</div>
+                <div class="timeline-content">
+                    <p>Standalone web prototype automating logistics supplies ordering: parses structured text, enforces category/item limits, prevents duplicate pending orders, and generates audit‑ready histories.</p>
+                    <p style="margin-top: 15px;"><strong>Stack:</strong> Node/Express, HTML/CSS/JS</p>
+                    <p style="margin-top: 10px;"><strong>Link:</strong> <a href="https://phoenixflix.vercel.app/orders.html" target="_blank" style="color: var(--text-accent); text-decoration: none;">View Demo →</a></p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 style="color: var(--text-accent); font-size: 1.3rem; margin-bottom: 10px;">Book Space Checker &amp; Booking Generator &#8212; Logistics Ops Tool</h3>
+                <div class="timeline-date" style="margin-bottom: 15px;">Jun 2026</div>
+                <div class="timeline-content">
+                    <p>Client&#8209;side tool parsing CED/eOPS text to compute gross/dim weight and L&amp;G; validates configurable thresholds and determines freight or space&#8209;booking requirements. Generates ready&#8209;to&#8209;send booking emails and Note&#8209;to&#8209;Driver instructions; runs entirely in the browser (no server).</p>
+                    <p style="margin-top: 10px;"><strong>Link:</strong> <a href="https://phoenixflix.vercel.app/note2driver.html" target="_blank" style="color: var(--text-accent); text-decoration: none;">View Demo &#8594;</a></p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 style="color: var(--text-accent); font-size: 1.3rem; margin-bottom: 10px;">AWB Consolidation Flow &#8212; Power Automate (SharePoint &#8594; Outlook)</h3>
+                <div class="timeline-date" style="margin-bottom: 15px;">Jun 2026</div>
+                <div class="timeline-content">
+                    <p>Cloud flow that reads SharePoint rows, normalizes multi&#8209;recipient fields, groups AWBs by recipient, and sends one consolidated HTML email per customer.</p>
+                    <p style="margin-top: 10px;"><strong>Techniques:</strong> array/JSON manipulation, split/trim/toLower/union/join expressions, Filter array, Create HTML table, O365 Outlook connector.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Tools -->
+        <section class="section">
+            <h2 class="section-title">Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Operations & Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">RCA / SPC</span>
+                        <span class="skill-tag">SLA / KPI</span>
+                        <span class="skill-tag">SOP Design</span>
+                        <span class="skill-tag">ServiceNow</span>
+                        <span class="skill-tag">CEBS / SharePoint</span>
+                        <span class="skill-tag">DG Handling</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Analytics & Dev</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power Query</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">SQL (PostgreSQL)</span>
+                        <span class="skill-tag">Power Automate</span>
+                        <span class="skill-tag">JavaScript / Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities & Leadership -->
+        <section class="section">
+            <h2 class="section-title">Activities &amp; Leadership</h2>
+            <div class="timeline-content">
+                <ul>
+                    <li>International Culture Team &#8212; Presenter/Mentor (2005&#8211;2010)</li>
+                    <li>Cross Culture Mentor &#8212; Coordinator (2007&#8211;2010)</li>
+                    <li>NWA American Red Cross &#8212; Outreach Committee Chair (2009)</li>
+                    <li>BYU Graduate Student Society &#8212; Student Council (2010)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="degree">PhD studies (incomplete), ECE</div>
+                    <div class="institution">Brigham Young University</div>
+                    <div class="edu-date">Provo, UT | 2010 – 2014</div>
+                </div>
+                <div class="education-card">
+                    <div class="degree">MS, Electrical Engineering</div>
+                    <div class="institution">University of Arkansas</div>
+                    <div class="edu-date">Fayetteville, AR | 2008 – 2010</div>
+                </div>
+                <div class="education-card">
+                    <div class="degree">BS, EE & Mathematics</div>
+                    <div class="institution">University of Arkansas</div>
+                    <div class="edu-date">Fayetteville, AR | 2004 – 2008</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Publications -->
+        <section class="section">
+            <h2 class="section-title">Certifications & Publications</h2>
+            <div class="timeline-content">
+                <div style="margin-bottom: 25px;">
+                    <h3 style="color: var(--text-accent); margin-bottom: 10px;">ServiceNow Badges</h3>
+                    <p>Customer Service Case Management, Incident Management, Problem Management, ServiceNow Administration Fundamentals, Knowledge Management, JavaScript Fundamentals.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--text-accent); margin-bottom: 10px;">Selected Publications</h3>
+                    <ul>
+                        <li><strong>"High Efficiency Dielectric Resonator Antenna Array Feeds for Satellite Communications,"</strong> IEEE Transactions on Antennas & Propagation, 2014.</li>
+                        <li><strong>"Broadband, High Efficiency Dielectric Resonator Antenna for Satellite Communications,"</strong> IEEE APS‑URSI, 2013.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Intersection Observer for scroll animations
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(section);
+        });
+
+        window.addEventListener('DOMContentLoaded', createParticles);
+    </script>
+</body>
+
+</html>
