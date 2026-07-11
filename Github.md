@@ -47,7 +47,7 @@ git commit -m "Initial commit"
 
 # 5. Link it to the new repository you created on GitHub.com
 #    (Replace the URL with your new repository's URL)
-git remote add origin https://github.com/BenBinhTran/Your-New-Repo-Name.git
+git remote add origin https://github.com/BenBinhTran/BenBinhTran.github.io
 
 # 6. Push your project to GitHub
 git push -u origin main
