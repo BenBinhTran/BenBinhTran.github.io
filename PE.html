@@ -488,17 +488,36 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .container { padding: 30px 15px; max-width: 100%; }
-            .name { font-size: 2.5rem; }
-            .job-title { font-size: 1.3rem; }
-            .contact-info { flex-direction: column; align-items: center; gap: 15px; }
-            .contact-item { max-width: 90%; word-wrap: break-word; }
+            .container { padding: 20px 15px; max-width: 100%; }
+            .header { padding: 40px 15px; margin-bottom: 30px; }
+            .name { font-size: 2.2rem; }
+            .job-title { font-size: 1.2rem; }
+            .contact-info { flex-direction: column; align-items: stretch; gap: 10px; }
+            .contact-item { width: 100%; max-width: 100%; box-sizing: border-box; justify-content: center; }
+            .download-btn { padding: 14px 24px; font-size: 1rem; }
             .section { padding: 20px 15px; }
-            .section-title { font-size: 1.5rem; }
+            .section-title { font-size: 1.4rem; }
             .skills-grid, .education-grid { grid-template-columns: 1fr; gap: 15px; }
-            .skill-category { padding: 20px 15px; }
-            .timeline { padding-left: 30px; }
-            .timeline-item { padding-left: 20px; }
+            .skill-category { padding: 15px; }
+            .timeline { padding-left: 25px; }
+            .timeline-item { padding-left: 15px; margin-bottom: 30px; }
+            .timeline-item::before { left: -38px; width: 14px; height: 14px; }
+            .timeline-title { font-size: 1.1rem; }
+            .timeline-company { font-size: 0.95rem; }
+            .project-card { padding: 20px 15px; }
+            .project-card:hover { transform: none; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 15px 10px; }
+            .name { font-size: 1.8rem; }
+            .job-title { font-size: 1rem; }
+            .section { padding: 15px 12px; }
+            .section-title { font-size: 1.2rem; }
+            .timeline { padding-left: 20px; }
+            .timeline-item::before { left: -32px; width: 12px; height: 12px; }
+            .timeline-title { font-size: 1rem; }
+            .education-card { padding: 20px 15px; }
         }
 
         /* Print Styles */
