@@ -1,0 +1,55 @@
+{
+    "rewrites": [
+        {
+            "source": "/TSE",
+            "destination": "/TSE.html"
+        },
+        {
+            "source": "/TSE/",
+            "destination": "/TSE.html"
+        },
+        {
+            "source": "/ECEN",
+            "destination": "/ECEN.html"
+        },
+        {
+            "source": "/ECEN/",
+            "destination": "/ECEN.html"
+        },
+        {
+            "source": "/CSS",
+            "destination": "/CSS.html"
+        },
+        {
+            "source": "/CSS/",
+            "destination": "/CSS.html"
+        },
+        {
+            "source": "/CRE",
+            "destination": "/credentials.html"
+        },
+        {
+            "source": "/CRE/",
+            "destination": "/credentials.html"
+        },
+        {
+            "source": "/credentials",
+            "destination": "/credentials.html"
+        },
+        {
+            "source": "/credentials/",
+            "destination": "/credentials.html"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/Resumes/(.*)",
+            "headers": [
+                {
+                    "key": "Content-Disposition",
+                    "value": "attachment"
+                }
+            ]
+        }
+    ]
+}

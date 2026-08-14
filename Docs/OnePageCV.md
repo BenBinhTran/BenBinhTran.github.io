@@ -1,16 +1,15 @@
   
   BEN BÌNH TRẦN 
- Technical Support Engineer | Operations Planning & Engineering | Customer Service 
+ Planning & Engineering Agent 
  Ho Chi Minh City, Vietnam • English/Vietnamese •  	 
 Email: BenBinhTran@gmail.com 
 Phone: +84 822 468 722 
-Portfolio: BenBinhTran.github.io 
-Web: phoenixflix.vercel.app 
-GitHub: PhoenixWeaver 
+Portfolio: BenBinhTran.github.io | phoenixflix.vercel.app 
+GitHub: github.com/PhoenixWeaver 
 
   
 SUMMARY 
-Operations-focused engineer in Customer Experience/RPI, First/Last Mile support, SLA/KPI recovery, root-cause analysis, continuous improvement, and lightweight internal tooling. Strong Excel/Power Query, Power BI basics, SQL, ServiceNow/CEBS/SharePoint, JavaScript, and Power Automate. 
+Operations-focused engineer with Customer Experience (RPI) and 20+ years of technical and operations experience. Skilled in Planning & Engineering support for First/Last Mile: SLA/KPI management, root-cause analysis, continuous improvement, and cross-functional coordination. Strong analytics (Excel/Power Query, Power BI basics, SQL), case and workflow systems (CEBS, ServiceNow, SharePoint), and lightweight internal tooling (JavaScript, Power Automate).
  
 CORE COMPETENCIES 
 • Operations Planning & Engineering: First/Last Mile, RPI monitoring, SLA recovery, SOPs 
@@ -29,11 +28,13 @@ SKILLS & TOOLS
 TECHNICAL PROJECTS 
 Order Automation System — logistics supplies management prototype, Jun 2026 
 • Parses structured text, enforces item/category limits, prevents duplicate pending orders, and produces audit-ready histories. 
+Case Library & Templates Organizer — Customer Service & Logistics Ops Tool, Jul 2026
+• Centralized, instantly searchable repository for bilingual email templates and internal notes, with live editing and local save.
 Unified Logistics Workflow — Bulk Booking Suite, Jun 2026 
 • Integrated 4-tool browser suite: Book Space Checker (CED parsing, weight/dim thresholds), Booking Generator (editable HTML email for Ramp team), Note to Driver (multi-AWB pickup note), and Bulk Shipment Request (VN Credit team approval email for shipments ≥300 kg not on whitelist). 
 AWB Consolidation Flow — Power Automate, Jun 2026 
 • Normalizes SharePoint rows, groups AWBs by recipient, and sends consolidated HTML emails via Outlook. 
-Demos: orders.html • bulkbooking.html 
+Demos: orders.html • bulkbooking.html • caselibrary.html
  
 EDUCATION 
 • MS Electrical Engineering — University of Arkansas (2008–2010) 
@@ -41,7 +42,7 @@ EDUCATION
 • PhD studies, Electrical & Computer Engineering — BYU (2010–2014) 
  
 CERTIFICATIONS & PUBLICATIONS 
-ServiceNow: CSM Case Management, Incident, Problem, Admin Fundamentals, Knowledge Management, JavaScript Fundamentals, Flow Designer. 
+ServiceNow: Customer Service Case Management, Incident Management, Problem Management, ServiceNow Administration Fundamentals, Knowledge Management, JavaScript Fundamentals.
 • IEEE TAP 2014; IEEE APS-URSI 2013. 
  
 HONORS & RECOGNITION 
@@ -64,29 +65,27 @@ Ho Chi Minh City, Vietnam | 02/2026 – Present
 • Use Power Query/Excel logs to track aging, pickup-within-SLA %, and top exception types; maintain templates, macros, and escalation notes. 
 • Built Power Automate flows to consolidate AWB rows, split multi-recipient fields, aggregate by recipient, and send one consolidated HTML email. 
  
-FedEx Vietnam — Customer Experience Agent / Supplies Coordination 
-Ho Chi Minh City, Vietnam | 03/2026 – 05/2026 
-• Collaborated with Malaysia and Singapore teams to streamline APAC supplies ordering, tracking, delivery updates, and escalation paths. 
-• Standardized bilingual templates, order procedures, typical quantity guidance, and “Data Not Found” checks to reduce duplicates and delays. 
- 
 Concentrix — Customer Service Partner Specialist  
 Ho Chi Minh City, Vietnam | 2024 – 2025 
 • Managed B2B account/platform support; triaged technical defects, escalated to engineering, and coordinated billing/dispute resolution. 
 • Logged incidents and categorized root causes in ServiceNow for audit readiness and process improvement reporting. 
  
-Black Diamond & Kizik - Quality Control & Assurance Specialist  
+Kizik - Quality Control & Assurance Specialist  
 USA | 2022 – 2023 
-• Built engineering test models, ran SPC analyses and failure investigations, improved production monitoring, and maintained QMS documentation. 
+• Conducted statistical analysis (SPC) of test data, drove failure investigations for design/material changes, and assisted in developing test fixtures for production monitoring.
+
+Black Diamond - Warehouse Operations (Pick & Pack)
+USA | 2022 – 2023
+• Executed high-volume pick-and-pack fulfillment, maintained inventory accuracy, and performed final visual quality checks on outbound products.
  
 AutoZone Inc. — Shift Lead / Sales Manager  
 USA | 2018 – 2020 
-• Led on-duty store operations and team of 6+; coordinated commercial/hub order fulfillment and daily KPI huddles for SLA/cycle-time control. 
+• Assumed full responsibility for store operations on assigned shifts, supervising a team of 6+. Managed Commercial/Hub departments to ensure B2B fulfillment SLAs were met. Oversaw daily financial operations, inventory control, and safety/risk management.
  
 Research Assistant — BYU / Linear Signal Inc. (Raytheon-sponsored) 
 Provo, UT | 2010 – 2014 
-• Designed/simulated high-efficiency DRA antenna arrays for SATCOM; characterized radome materials at microwave frequencies and high temperatures. 
+• Led end-to-end design, simulation, and fabrication of a high-efficiency DRA antenna array for SATCOM, achieving a 10% aperture efficiency improvement. Developed and validated a model for characterizing radome materials at high temperatures.
  
 Research Assistant — University of Arkansas (MOLICS Lab) 
 Fayetteville, AR | 2005 – 2010 
 • Applied microwave imaging for non-contact object detection; fabricated/tested RF devices under strict laboratory protocols. 
-

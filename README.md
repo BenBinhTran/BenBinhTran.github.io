@@ -1,54 +1,76 @@
 # Professional CV Website Portfolio
 
-A modern, interactive CV website featuring three specialized resume pages, each tailored for different career paths. Built with premium design aesthetics including animated backgrounds, glassmorphism effects, and smooth transitions.
+A modern, interactive CV website featuring multiple specialized resume pages, each tailored for different career paths. Built with premium design aesthetics including animated backgrounds, glassmorphism effects, and smooth transitions.
 
 ## 🌐 Live Demos
 
-- **Technical Support Engineer (IT):** https://BenBinhTran.github.io/TSE.html
-- **RF & Microwave Engineer (ECEn):** https://BenBinhTran.github.io/ECEN.html
-- **Customer Service Specialist:** https://BenBinhTran.github.io/CSS.html
+- **Home:** https://bentran.vercel.app
+- **Planning & Engineering (P&E) Agent:** https://bentran.vercel.app/PE
+- **Technical Support Engineer (TSE):** https://bentran.vercel.app/TSE
+- **RF & Microwave Engineer (ECEN):** https://bentran.vercel.app/ECEN
+- **Customer Service Specialist (CSS):** https://bentran.vercel.app/CSS
+- **TEFL English Teacher:** https://bentran.vercel.app/TEFL
+- **Credentials:** https://bentran.vercel.app/credentials
 
 ## 📄 CV Pages Overview
 
-### 1. ECEN.html - RF & Microwave Engineer
+### 1. PE.html - Planning & Engineering Agent
+**Focus:** First/Last Mile Logistics, SLA/KPI Management, Process Improvement
+
+**Highlights:**
+- Operations-focused with a strong background in RPI creation and monitoring.
+- Skills in analytics (Power Query, Power BI, SQL) and automation (Power Automate).
+- Bilingual (English/Vietnamese) with extensive cross-functional coordination experience.
+
+**Live URL:** `/PE`
+**PDF:** `BenBenTran_CV_PE.pdf`
+
+---
+
+### 2. ECEN.html - RF & Microwave Engineer
 **Focus:** Electromagnetics, RF/Microwave Systems
 
 **Highlights:**
-- Deep expertise in antenna theory and computational modeling
-- Specialized in SATCOM, phased array antennas, radar systems
-- 4 core competency categories: RF & Satellite Systems, Engineering Software & Tools, Quality & Manufacturing, Operations & Leadership
-- PhD and MS specializations included in education
+- Deep expertise in antenna theory, computational modeling, and SATCOM.
+- 4 core competency categories: RF & Satellite Systems, Engineering Software, Quality & Manufacturing, and Operations.
 
-**Live URL:** `/ECEN`  
-**PDF:** `TranBinhBen_CV_ECEN.pdf`
+**Live URL:** `/ECEN`
+**PDF:** `BenBinhTran_CV_ECEN.pdf`
 
 ---
 
-### 2. TSE.html - Technical Support Engineer
+### 3. TSE.html - Technical Support Engineer
 **Focus:** Web Development, WordPress, Full-stack Solutions
 
 **Highlights:**
-- Emphasizes Web Development expertise
-- WordPress and Full-stack solutions
-- Root Cause Analysis (RCA) and engineering discipline
-- Core competencies in Software & Web Engineering and Engineering & Systems Logic
 
-**Live URL:** `/TSE`  
-**PDF:** `TranBinhBen_CV_TSE.pdf`
+**Live URL:** `/TSE`
+**PDF:** `BenBinhTran_CV_TSE.pdf`
 
 ---
 
-### 3. CSS.html - Customer Service Specialist
+### 4. CSS.html - Customer Service Specialist
 **Focus:** ServiceNow, IT Support, ITSM
 
 **Highlights:**
 - ServiceNow Support Specialist (Practitioner Level) training
 - IT Service Management expertise
 - 20 years US residency with corporate standards understanding
-- 6 core competency categories in symmetric 3×2 grid layout
 
-**Live URL:** `/CSS`  
-**PDF:** `TranBinhBen_CV_CSS.pdf`
+**Live URL:** `/CSS`
+**PDF:** `BenBinhTran_CV_CSS.pdf`
+
+---
+
+### 5. TEFL.html - TEFL English Teacher
+**Focus:** ESL Instruction, Cross-Cultural Communication
+
+**Highlights:**
+- TEFL certified with fluent American English proficiency from 20+ years in the US.
+- Extensive experience in university-level teaching, mentoring, and curriculum development.
+
+**Live URL:** `/TEFL`
+**PDF:** `TR1758107923-certificate.pdf`
 
 ## ✨ Design Features
 
@@ -57,11 +79,11 @@ All pages share a premium, modern design with:
 - 🎨 **Animated Gradient Backgrounds** - Floating particles and dynamic color shifts
 - 💎 **Glassmorphism Effects** - Semi-transparent cards with backdrop blur
 - ⚡ **Smooth Transitions** - Hover effects and scroll animations
-- � **Fully Responsive** - Mobile-first design approach
+- 📱 **Fully Responsive** - Mobile-first design approach
 - 🎯 **Interactive Elements** - Pulsing timeline markers and animated sections
-- � **Professional Color Scheme** - Purple/blue gradients with cyan accents
+- 🎨 **Professional Color Scheme** - Unique gradients for each CV theme
 - 📥 **PDF Download** - Prominent download button for each resume version
-- � **SEO Optimized** - Meta tags, Open Graph, proper semantic HTML
+- 🚀 **SEO Optimized** - Meta tags, Open Graph, proper semantic HTML
 
 ## 🛠️ Technologies
 
@@ -79,42 +101,49 @@ BenTran_CV/
 ├── ECEN.html             # RF & Microwave Engineer CV
 ├── CSS.html              # Customer Service Specialist CV
 ├── index.html            # Landing page
-├── sky.jpg               # Background image for Open Graph
+├── vercel.json           # Vercel deployment configuration
 ├── Resumes/              # PDF files directory
-│   ├── TranBinhBen_CV_TSE.pdf
-│   ├── TranBinhBen_CV_ECEN.pdf
-│   └── TranBinhBen_CV_CSS.pdf
+│   ├── BenBinhTran_CV_TSE.pdf
+│   ├── BenBinhTran_CV_ECEN.pdf
+│   └── BenBinhTran_CV_CSS.pdf
 ├── README.md             # This file
 └── Update290126.md       # Detailed update report
 ```
-
 
 ## 🚀 Deployment
 
 ### Prerequisites
 Ensure all PDF files are in the `Resumes/` folder with correct names.
 
-### Deploy to GitHub Pages
+### Deploy to Vercel
 
-1. **Push to GitHub:**
+1. **Connect to Vercel:**
+   ```bash
+   vercel
+   ```
+
+2. **Or push to GitHub:**
    ```bash
    git add .
    git commit -m "Update CV pages"
-   git push origin main
+   git push
    ```
 
-2. **GitHub Pages will automatically deploy** from the main branch.
+3. **Vercel will automatically deploy** if connected to your repository.
 
-3. **Access your site at:**
-   - Main site: https://BenBinhTran.github.io
-   - Individual pages: 
-     - https://BenBinhTran.github.io/TSE.html
-     - https://BenBinhTran.github.io/ECEN.html
-     - https://BenBinhTran.github.io/CSS.html
+### Routing Configuration
 
-### GitHub Pages Configuration
+The `vercel.json` file configures clean URLs:
 
-GitHub Pages serves HTML files directly. No additional routing configuration needed - just use the `.html` extensions in your URLs.
+```json
+{
+  "rewrites": [
+    { "source": "/TSE", "destination": "/TSE.html" },
+    { "source": "/ECEN", "destination": "/ECEN.html" },
+    { "source": "/CSS", "destination": "/CSS.html" }
+  ]
+}
+```
 
 ## 📋 Features by Section
 
@@ -142,8 +171,8 @@ GitHub Pages serves HTML files directly. No additional routing configuration nee
 ## 👨‍💻 Author
 
 **Bình (Ben) Trần**
-- 📧 Email: TranBinhBen@gmail.com
-- 🌐 Website: https://BenBinhTran.github.io
+- 📧 Email: TranBinhBen@gmail.com, bentran.jobs@gmail.com
+- 🌐 Website: https://bentran.vercel.app
 - 🚀 Portfolio: https://phoenixflix.vercel.app
 - 💻 GitHub: https://github.com/PhoenixWeaver
 - 📍 Location: Ho Chi Minh City, Vietnam
@@ -155,11 +184,10 @@ This project is personal portfolio material. Design and code structure can be us
 ## 🔄 Recent Updates
 
 **January 29, 2026:**
-- ✅ Migrated from Vercel to GitHub Pages deployment
-- ✅ Updated all URLs from bentran.vercel.app to BenBinhTran.github.io
 - ✅ Created three specialized CV pages (TSE, ECEN, CSS)
 - ✅ Updated all meta tags and SEO optimization
 - ✅ Configured PDF download links
+- ✅ Added Vercel routing configuration
 - ✅ Made Core Competencies symmetric (3×2 grid for CSS)
 - ✅ Added education specializations
 - ✅ Updated README with comprehensive documentation

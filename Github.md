@@ -12,18 +12,22 @@ Use this script when you have already published your repository and just want to
 # 1. Navigate to your project directory in the terminal
 cd "d:\My Documents\BenTran_CV\BenTran_CV"
 
-# 2. Check the status of your files to see what has changed
+# 2. Pull the latest changes from the GitHub remote to prevent errors
+#    (This is the most important step to avoid rejection)
+git pull origin main
+
+# 3. Check the status of your files to see what has changed
 git status
 
-# 3. Add all new and modified files to be committed
+# 4. Add all new and modified files to be committed
 git add .
 
-# 4. Commit your changes with a descriptive message
+# 5. Commit your changes with a descriptive message
 #    (You can change the message inside the quotes)
-git commit -m "🏆 BenBinhTran CV IO: 11072026"
+git commit -m "🏆 BenTran CV Vercel: 140826"
 
-# 5. Push your committed changes to GitHub
-git push
+# 6. Push your committed changes to GitHub
+git push origin main
 ```
 
 ---
@@ -43,22 +47,26 @@ git init
 git add .
 
 # 4. Create the first commit
-git commit -m "🏆 BenBinhTran IO -260726"
+git commit -m "Initial commit"
 
 # 5. Link it to the new repository you created on GitHub.com
 #    (Replace the URL with your new repository's URL)
-git remote add origin https://github.com/BenBinhTran/BenBinhTran.github.io
+git remote add origin https://github.com/BenBinhTran/Your-New-Repo-Name.git
 
 # 6. Push your project to GitHub
 git push -u origin main
 ```
+==================
+git credential-manager github logout BenBinhTran
+git credential-manager github list 2>&1
+git push origin main
 
-====
+=========
 git credential-manager github logout PhoenixWeaver
 git credential-manager github list 2>&1
 git push origin main
-===========
-git remote add origin https://github.com/BenBinhTran/BenBinhTran.github.io
+
+git remote set-url origin https://github.com/BenBinhTran/BenTran_CV.git
 # 2. Check the status of your files to see what has changed
 git status
 
@@ -67,7 +75,7 @@ git add .
 
 # 4. Commit your changes with a descriptive message
 #    (You can change the message inside the quotes)
-git commit -m "🏆 BenTran CV GitHub IO: 010826"
+git commit -m "🏆 BenTran CV Vercel: 140826 2100"
 
 # 5. Push your committed changes to GitHub
 git push
