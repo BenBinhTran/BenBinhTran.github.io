@@ -66,7 +66,7 @@ git credential-manager github logout PhoenixWeaver
 git credential-manager github list 2>&1
 git push origin main
 
-git remote set-url origin https://github.com/BenBinhTran/BenTran_CV.git
+git remote set-url origin https://github.com/BenBinhTran/BenBinhTran.github.io.git
 # 2. Check the status of your files to see what has changed
 git status
 
@@ -75,7 +75,7 @@ git add .
 
 # 4. Commit your changes with a descriptive message
 #    (You can change the message inside the quotes)
-git commit -m "🏆 BenTran CV Vercel: 04092026 2100"
+git commit -m "🏆 BenTran CV Github IO: 04092026 2100"
 
 # 5. Push your committed changes to GitHub
 git push
