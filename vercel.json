@@ -39,6 +39,14 @@
         {
             "source": "/credentials/",
             "destination": "/credentials.html"
+        },
+        {
+            "source": "/EAN",
+            "destination": "/EAN.html"
+        },
+        {
+            "source": "/EAN/",
+            "destination": "/EAN.html"
         }
     ],
     "headers": [
