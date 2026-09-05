@@ -95,6 +95,18 @@
       text-align: right;
     }
 
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 12px;
+      text-align: right;
+    }
+
+    .contact-grid span {
+      display: block;
+      white-space: nowrap;
+    }
+
     a {
       color: #0a66c2;
       text-decoration: none;
@@ -273,12 +285,30 @@
       font-size: var(--cv-meta-size);
     }
 
+    .project-links a {
+      color: #0a66c2;
+      font-style: italic;
+    }
+
     .publication-block {
       margin-top: 10px;
     }
 
     .publication-block ul {
       margin-bottom: 0;
+    }
+
+    .role-alignment-intro {
+      margin: 0 0 7px;
+      color: var(--cv-muted);
+      font-size: var(--cv-meta-size);
+      line-height: 1.35;
+    }
+
+    .transition-plan-link {
+      margin-top: 6px;
+      color: var(--cv-muted);
+      font-size: var(--cv-meta-size);
     }
 
     .no-print {
@@ -333,9 +363,18 @@
         color: var(--cv-text);
       }
 
+      a[style*="color:#0a66c2"] {
+        color: #0a66c2 !important;
+      }
+
+      .project-links a {
+        color: #0a66c2 !important;
+        font-style: italic;
+      }
+
       .document-header {
-        gap: 10px;
-        padding-bottom: 4px;
+        gap: 14px;
+        padding-bottom: 6px;
         break-inside: avoid;
       }
 
@@ -354,9 +393,13 @@
       }
 
       .contact {
-        flex-basis: 205px;
-        font-size: 8.5px;
-        line-height: 1.25;
+        flex-basis: 300px;
+        font-size: 8px;
+        line-height: 1.15;
+      }
+
+      .contact-grid {
+        gap: 0 8px;
       }
 
       section,
@@ -365,7 +408,9 @@
       }
 
       h2 {
-        margin: 2px 0;
+        padding-bottom: 2px;
+        margin: 4px 0 3px;
+        border-bottom: 1px solid #dbe5f0;
         font-size: 10px;
       }
 
@@ -439,15 +484,15 @@
       }
 
       .highlights {
-        margin-top: 6px;
+        margin-top: 8px;
       }
 
       .highlights-grid {
-        gap: 6px;
+        gap: 8px;
       }
 
       .highlight {
-        padding: 5px;
+        padding: 6px;
       }
 
       .highlight h3 {
@@ -464,7 +509,8 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         column-gap: 12px;
-        margin-top: 6px;
+        row-gap: 2px;
+        margin-top: 8px;
       }
 
       .projects > h2,
@@ -474,7 +520,7 @@
       }
 
       .project-block {
-        margin-bottom: 2px;
+        margin-bottom: 3px;
       }
 
       .project-block ul {
@@ -486,7 +532,21 @@
       }
 
       .publication-block {
-        margin-top: 2px;
+        margin-top: 4px;
+        padding-top: 2px;
+        border-top: 1px solid #e3eaf3;
+      }
+
+      .role-alignment-intro {
+        margin-bottom: 4px;
+        font-size: 8.2px;
+        line-height: 1.15;
+      }
+
+      .role-alignment-link {
+        margin-top: 4px;
+        font-size: 8px;
+        line-height: 1.15;
       }
     }
   </style>
@@ -504,12 +564,14 @@
       </div>
 
       <address class="contact">
-        +84 822 468 722<br>
-        <a href="mailto:BenBinhTran@gmail.com">BenBinhTran@gmail.com</a><br>
-        <a href="https://BenBinhTran.github.io" target="_blank" rel="noopener noreferrer">BenBinhTran.github.io</a><br>
-        <a href="https://phoenixflix.vercel.app" target="_blank" rel="noopener noreferrer">phoenixflix.vercel.app</a><br>
-        <a href="https://github.com/PhoenixWeaver" target="_blank" rel="noopener noreferrer">github.com/PhoenixWeaver</a><br>
-        Ho Chi Minh City, Vietnam
+        <div class="contact-grid">
+          <span>+84 822 468 722</span>
+          <span>Ho Chi Minh City, Vietnam</span>
+          <span><a href="mailto:BenBinhTran@gmail.com">BenBinhTran@gmail.com</a></span>
+          <span><a href="https://BenBinhTran.github.io" target="_blank" rel="noopener noreferrer">BenBinhTran.github.io</a></span>
+          <span><a href="https://phoenixflix.vercel.app" target="_blank" rel="noopener noreferrer">phoenixflix.vercel.app</a></span>
+          <span><a href="https://github.com/PhoenixWeaver" target="_blank" rel="noopener noreferrer">github.com/PhoenixWeaver</a></span>
+        </div>
       </address>
     </header>
 
@@ -656,69 +718,72 @@
     </div>
 
     <section class="highlights" aria-labelledby="highlights-heading">
-      <h2 id="highlights-heading">Targeted Network Highlights</h2>
+      <h2 id="highlights-heading">Air Network Operations &amp; Engineering Role Alignment</h2>
+      <p class="role-alignment-intro">Using the Air Network &amp; Partner Management job description as a framework, I mapped my RPI, SLA/KPI, exception management, and automation experience to each responsibility area and built a structured competency development plan — documenting how I would approach the role from day one if assigned.</p>
       <div class="highlights-grid">
         <article class="highlight">
-          <h3>Regional Collaboration</h3>
-          <p>RPI monitoring with China and Taiwan teams; RPI creation with Thailand teams; supplies coordination with Malaysia and Singapore.</p>
+          <h3>Network Performance</h3>
+          <p>Translate shipment, SLA, and exception data into lane, capacity, service, and partner-performance insights.</p>
         </article>
         <article class="highlight">
-          <h3>Operational Reliability</h3>
-          <p>CEBS/SharePoint case ownership, SLA-risk escalation, service recovery, and coordination with station, PUD, and inbound-clearance teams.</p>
+          <h3>Analytics &amp; Planning</h3>
+          <p>Use Excel/Power Query, SQL, RCA/SPC, and automation to support dashboards, business cases, and continuous improvement.</p>
         </article>
         <article class="highlight">
-          <h3>Engineering &amp; Analytics</h3>
-          <p>M.S./B.S. Electrical Engineering with Power Query, SQL, RCA/SPC, and Power Automate workflow implementation experience.</p>
+          <h3>Operational Execution</h3>
+          <p>Coordinate station, PUD, clearance, regional, airline, and vendor stakeholders through implementation and disruption recovery.</p>
         </article>
       </div>
+      <p class="role-alignment-link">Supporting role-alignment details: <a href="https://benbinhtran.github.io/AirNetworkPlan.html" target="_blank" rel="noopener noreferrer" style="color:#0a66c2;font-style:italic;text-decoration:underline;">Air Network Operations &amp; Engineering plan</a></p>
     </section>
 
     <section class="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Selected Network &amp; Automation Projects</h2>
+      <h2 id="projects-heading">Selected Projects &amp; Automation</h2>
 
       <article class="project-block">
-        <div class="role">Unified Logistics Workflow — Bulk Booking Suite</div>
-        <div class="meta">Jun 2026 | Vanilla JS, HTML/CSS, regex parsing, unit conversion</div>
+        <div class="role">Bulk Booking Logistics Suite</div>
+        <div class="meta">Jun 2026 | Vanilla JS, HTML/CSS</div>
         <ul>
-          <li>Integrated browser-based tools for Book Space Checker, Booking Generator, Note to Driver, and Bulk Shipment Request workflows, including CED/eOPS parsing, weight/dimension checks, multi-AWB notes, and approval-email generation.</li>
-          <li class="project-links">Demo: <a href="https://phoenixflix.vercel.app/bulkbooking.html" target="_blank" rel="noopener noreferrer">phoenixflix.vercel.app/bulkbooking.html</a> | README: <a href="https://github.com/PhoenixWeaver/BT-utility-tools-demo/blob/main/README_bulkbooking.md" target="_blank" rel="noopener noreferrer">BT-utility-tools-demo</a></li>
+          <li>Combined booking, driver-note, and bulk-request tools with AWB parsing, dimension checks, and approval-email generation.</li>
+          <li class="project-links">Demo: <a href="https://phoenixflix.vercel.app/bulkbooking.html" target="_blank" rel="noopener noreferrer">bulkbooking.html</a> | README: <a href="https://github.com/PhoenixWeaver/BT-utility-tools-demo/blob/main/README_bulkbooking.md" target="_blank" rel="noopener noreferrer">BT-utility-tools-demo</a></li>
         </ul>
       </article>
 
       <article class="project-block">
-        <div class="role">AWB Consolidation Flow — Power Automate (SharePoint → Outlook)</div>
-        <div class="meta">Jun 2026 | Power Automate, SharePoint, Microsoft Lists, Outlook</div>
+        <div class="role">AWB Consolidation Flow</div>
+        <div class="meta">Jun 2026 | Power Automate, SharePoint, Outlook</div>
         <ul>
-          <li>Normalizes multi-recipient fields, groups AWBs by recipient, tracks workflow data, and sends one consolidated HTML email per customer; uses array/JSON manipulation, Filter array, Create HTML table, and Office 365 Outlook connectors.</li>
+          <li>Groups AWBs by recipient and sends consolidated HTML emails with tracked workflow data.</li>
         </ul>
       </article>
 
       <article class="project-block">
-        <div class="role">Customer Experience Request Management Automation Platform</div>
-        <div class="meta">Jun 2026 | Power Automate, Power Apps, Microsoft Lists, Outlook, Microsoft 365</div>
+        <div class="role">Customer Request Automation</div>
+        <div class="meta">Jun 2026 | Power Automate, Power Apps, Lists, Outlook</div>
         <ul>
-          <li>Designed request intake, classification, assignment, status tracking, SLA monitoring, and stakeholder notification workflows across multiple request types, countries, languages, and processing teams.</li>
+          <li>Automates intake, routing, assignment, SLA tracking, and notifications across teams.</li>
           <li class="project-links">README: <a href="https://github.com/PhoenixWeaver/BT-utility-tools-demo/blob/main/README_AutomateFlows.md" target="_blank" rel="noopener noreferrer">BT-utility-tools-demo</a></li>
         </ul>
       </article>
 
       <article class="project-block">
-        <div class="role">Order Automation System — Logistics Supplies Management</div>
+        <div class="role">Logistics Supplies Order Automation</div>
         <div class="meta">Jun 2026 | Node/Express, HTML/CSS/JS</div>
         <ul>
-          <li>Parses structured text, enforces category and item limits, prevents duplicate pending orders, and generates audit-ready histories for logistics supplies workflows.</li>
-          <li class="project-links">Demo: <a href="https://phoenixflix.vercel.app/orders.html" target="_blank" rel="noopener noreferrer">phoenixflix.vercel.app/orders.html</a> | README: <a href="https://github.com/PhoenixWeaver/BT-utility-tools-demo/blob/main/README_orders.md" target="_blank" rel="noopener noreferrer">BT-utility-tools-demo</a></li>
+          <li>Validates orders, blocks duplicates, and creates audit-ready histories.</li>
+          <li class="project-links">Demo: <a href="https://phoenixflix.vercel.app/orders.html" target="_blank" rel="noopener noreferrer">orders.html</a> | README: <a href="https://github.com/PhoenixWeaver/BT-utility-tools-demo/blob/main/README_orders.md" target="_blank" rel="noopener noreferrer">BT-utility-tools-demo</a></li>
         </ul>
       </article>
 
       <section class="publication-block" aria-labelledby="publications-heading">
-        <h2 id="publications-heading">Selected Publications</h2>
+        <h2 id="publications-heading">Publications</h2>
         <ul>
-          <li><strong>“High Efficiency Dielectric Resonator Antenna Array Feeds for Satellite Communications,”</strong> <em>IEEE Transactions on Antennas &amp; Propagation</em>, 2014.</li>
-          <li><strong>“Broadband, High Efficiency Dielectric Resonator Antenna for Satellite Communications,”</strong> <em>IEEE APS-URSI</em>, 2013.</li>
+          <li><strong>High-efficiency DRA array feeds for satellite communications.</strong> <em>IEEE TAP</em>, 2014.</li>
+          <li><strong>Broadband high-efficiency DRA for satellite communications.</strong> <em>IEEE APS-URSI</em>, 2013.</li>
         </ul>
       </section>
     </section>
+
   </main>
 </body>
 
