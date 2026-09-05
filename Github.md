@@ -75,7 +75,7 @@ git add .
 
 # 4. Commit your changes with a descriptive message
 #    (You can change the message inside the quotes)
-git commit -m "🏆 BenTran CV Github IO: 05092026 2100"
+git commit -m "🏆 BenTran CV Github IO: 05092026 1100"
 
 # 5. Push your committed changes to GitHub
 git push
