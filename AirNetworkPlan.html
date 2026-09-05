@@ -1,1 +1,746 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Air Network Operations &amp; Engineering Competency Development Plan</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%237b5ea7'/%3E%3Cpath d='M14 2L6 13h5v7l8-11h-5z' fill='%23fff'/%3E%3C/svg%3E"><style>:root{--primary:#7b5ea7;--primary-light:#ede8fb;--secondary:#4a90d9;--bg:#f1f5f9;--card-bg:#fff;--text-main:#1e1a2e;--text-muted:#9a88c0;--border:#e0d8f5;--shadow:0 4px 12px rgba(120,90,180,0.08);--gradient:linear-gradient(135deg, #7b5ea7, #4a90d9)}*{box-sizing:border-box;margin:0;padding:0}body{font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text-main);display:flex;flex-direction:column;height:100vh;overflow:hidden}.topbar{display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px;background:#fff;border-bottom:1px solid var(--border);flex-shrink:0;box-shadow:0 1px 4px rgba(120,90,180,.08);z-index:100}.topbar-left{display:flex;align-items:center;gap:12px}.topbar-logo{width:32px;height:32px;background:var(--gradient);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:1.1rem}.topbar-title{font-size:1.1rem;font-weight:700;color:#3b2a6e}.search-wrap{position:relative;width:240px}.search-wrap input{width:100%;padding:8px 14px 8px 36px;border-radius:10px;border:1.5px solid #d0c4f0;background:#faf8ff;font-size:.88rem;outline:0;transition:all .2s}.search-wrap input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(123,94,167,.1)}.search-icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.4;display:flex}.app-main{display:flex;flex:1;overflow:hidden}.sidebar{width:270px;background:#fff;border-right:1px solid var(--border);overflow-y:auto;flex-shrink:0;scrollbar-width:none}.sidebar::-webkit-scrollbar{display:none}.nav-section{background:var(--gradient);color:#fff;padding:12px 16px;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none}.nav-section svg{opacity:.85;flex-shrink:0}.nav-section-chevron{margin-left:auto;transition:transform .2s}.nav-section.collapsed .nav-section-chevron{transform:rotate(-90deg)}.nav-subsection{background:#f0ebff;border-left:4px solid var(--primary);padding:10px 16px 10px 20px;font-size:.8rem;font-weight:700;color:var(--primary);display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none}.nav-subsection svg{opacity:.7;flex-shrink:0}.nav-subsection-chevron{margin-left:auto;transition:transform .2s}.nav-subsection.collapsed .nav-subsection-chevron{transform:rotate(-90deg)}.nav-page{padding:9px 16px 9px 36px;cursor:pointer;font-size:.88rem;color:#5a3ea0;display:flex;align-items:center;gap:9px;transition:all .15s;border-left:3px solid transparent}.nav-page:hover{background:#f8f6ff;color:var(--primary)}.nav-page.active{background:#ede8fb;color:var(--primary);font-weight:600;border-left-color:var(--primary)}.nav-page-dot{width:6px;height:6px;border-radius:50%;background:var(--primary);opacity:.35;flex-shrink:0}.nav-page.active .nav-page-dot{opacity:1}.nav-page-bullet{font-size:.68rem;color:var(--text-muted);margin-top:2px;line-height:1.3;padding-left:15px}.content-area{flex:1;overflow-y:auto;padding:36px 40px;scrollbar-width:thin}.page-content{display:none;max-width:860px;margin:0 auto;animation:fadeIn .3s ease-out}.page-content.active{display:block}@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.breadcrumb{font-size:.75rem;color:var(--text-muted);margin-bottom:20px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}.breadcrumb span{color:var(--primary);font-weight:600}.breadcrumb-sep{opacity:.4}.page-title-bar{display:flex;align-items:flex-start;gap:16px;margin-bottom:28px;padding-bottom:20px;border-bottom:2px solid var(--border)}.page-icon{width:48px;height:48px;border-radius:12px;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}.page-title{font-size:1.55rem;font-weight:800;color:#2a2040;line-height:1.2}.page-subtitle{font-size:.82rem;color:var(--text-muted);margin-top:5px}.responsibility-pill{display:inline-flex;align-items:center;gap:6px;background:var(--primary-light);color:var(--primary);font-size:.78rem;font-weight:700;padding:5px 14px;border-radius:20px;margin-top:10px;border:1px solid var(--border)}.note-block{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;margin-bottom:18px;overflow:hidden;box-shadow:0 2px 6px rgba(120,90,180,.04)}.note-block-header{padding:10px 18px;background:var(--primary-light);border-bottom:1px solid var(--border);font-size:.72rem;font-weight:800;color:var(--primary);text-transform:uppercase;letter-spacing:.08em;display:flex;align-items:center;gap:7px}.note-block-body{padding:16px 20px;font-size:.91rem;line-height:1.75;color:#3a2e5a;white-space:pre-wrap}.highlight-box{background:#fffbf0;border:1px solid #f5e0a0;border-radius:10px;padding:13px 17px;margin:12px 0;font-size:.88rem;color:#7e5c1a;line-height:1.6}.scenario-box{background:#f0f7ff;border:1px solid #c0d8f5;border-radius:10px;padding:13px 17px;margin:12px 0;font-size:.88rem;color:#1a4a7e;line-height:1.6}.step-label{display:inline-block;background:var(--gradient);color:#fff;font-size:.68rem;font-weight:800;padding:3px 10px;border-radius:20px;margin-bottom:5px;letter-spacing:.04em}.table-wrap{overflow-x:auto;margin:0 0 18px;border-radius:10px;border:1px solid var(--border);overflow:hidden}table{border-collapse:collapse;width:100%;font-size:.87rem}th{background:var(--primary-light);color:var(--primary);padding:8px 14px;text-align:left;font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}td{padding:8px 14px;border-bottom:1px solid var(--border);color:#3a2e5a}tr:last-child td{border-bottom:none}tr:hover td{background:#faf8ff}.tag-chip{display:inline-block;background:var(--primary-light);color:var(--primary);font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:20px;margin:2px 3px}.checklist{list-style:none;padding:0}.checklist li{padding:5px 0 5px 26px;position:relative;font-size:.9rem;color:#3a2e5a;border-bottom:1px solid #f5f0ff}.checklist li:last-child{border-bottom:none}.checklist li::before{content:"✅";position:absolute;left:0;font-size:.82rem}.site-footer{padding:12px 24px;background:#fff;border-top:1px solid var(--border);text-align:center;font-size:.73rem;color:var(--text-muted);flex-shrink:0}::-webkit-scrollbar{width:7px}::-webkit-scrollbar-track{background:0 0}::-webkit-scrollbar-thumb{background:#d0c4f0;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#c0b0e0}@media (max-width:768px){.sidebar{display:none}.content-area{padding:20px}}</style></head><body><header class="topbar"><div class="topbar-left"><div class="topbar-logo">BT</div><span class="topbar-title">Air Network Operations &amp; Engineering Competency Development Plan</span></div><div class="search-wrap"><span class="search-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span><input type="text" id="searchInput" placeholder="Search pages..."></div></header><div class="app-main"><aside class="sidebar"><div class="nav-section" id="sec-jd" onclick='toggleSection("sec-jd")'><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Job Description <svg class="nav-section-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div><div id="sec-jd-body"><div class="nav-page" data-page="jd" onclick='showPage("jd")'><span class="nav-page-dot"></span> Descriptions and Requirements</div><div class="nav-page-bullet">• Engineer – Air Network &amp; Partner Management</div></div><div class="nav-section" id="sec-demo" onclick='toggleSection("sec-demo")'><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Demo Disclaimer <svg class="nav-section-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div><div id="sec-demo-body"><div class="nav-page" data-page="demo" onclick='showPage("demo")'><span class="nav-page-dot"></span>Full Plan not Online</div><div class="nav-page-bullet">• Detail plans &amp; all Key Responsibilities, Key Competencies, and Steps/Scenarios are available upon internal discussion</div></div><div class="nav-section" id="sec-kr" onclick='toggleSection("sec-kr")'><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Key Responsibilities <svg class="nav-section-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div><div id="sec-kr-body"><div class="nav-subsection" id="subsec-pnsd" onclick='toggleSubsection("subsec-pnsd")'><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg> Partner Network Strategy &amp; Development <svg class="nav-subsection-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="nav-subsection-children" id="subsec-pnsd-body"><div class="nav-page active" data-page="kr1" onclick='showPage("kr1")'><span class="nav-page-dot"></span>Key Responsibilities - 1</div><div class="nav-page-bullet">• Identify, evaluate &amp; recommend partners</div><div class="nav-page" data-page="kr2" onclick='showPage("kr2")'><span class="nav-page-dot"></span>Key Responsibilities - 2</div><div class="nav-page-bullet">• Develop market-specific capacity strategies</div><div class="nav-page" data-page="kr3" onclick='showPage("kr3")'><span class="nav-page-dot"></span>Key Responsibilities - 3</div><div class="nav-page-bullet">• Conduct network analyses &amp; optimal solutions</div></div></div></aside><main class="content-area"><div class="page-content" id="page-demo"><div class="breadcrumb"><span>Demo Disclaimer</span><span class="breadcrumb-sep">›</span> Full Plan not Online</div><div class="page-title-bar"><div class="page-icon">🔒</div><div><div class="page-title">Full Plan not Online</div><div class="page-subtitle">Demo Disclaimer</div></div></div><div class="highlight-box" style="font-size:1rem;padding:24px 28px;line-height:1.9">📌 <strong>Detail plans and All steps are Available upon internal discussion.</strong></div><div class="note-block"><div class="note-block-header">ℹ️ About This Demo</div><div class="note-block-body">This viewer presents a curated overview of the Air Network Operations &amp; Engineering Competency Development Plan. The full version — including complete step-by-step breakdowns, scenario walkthroughs, practice exercises, self-assessment frameworks, and onboarding roadmaps — is not published online. For access to the complete plan, please reach out directly for an internal discussion.</div></div></div><div class="page-content" id="page-jd"><div class="breadcrumb"><span>Job Description</span><span class="breadcrumb-sep">›</span> JD</div><div class="page-title-bar"><div class="page-icon">📄</div><div><div class="page-title">Engineer – Air Network &amp; Partner Management</div><div class="page-subtitle">Federal Express Corporation AMEA (Phoenix Express) &middot; Job ID: RC781658 &middot; Full-time, Professional, Regular (44 hrs/week)</div><div class="responsibility-pill">📍 SG &amp; HCMC & Jupiter</div></div></div><div class="note-block"><div class="note-block-header">📋 Position Summary</div><div class="note-block-body">The Engineer / Senior Engineer, Partner Network Management is responsible for the strategic planning, development, implementation, and ongoing optimization of third-party air network capacity across Asia Pacific. This role serves as a key liaison between network planning, airline partners, operations, procurement, commercial teams, and external vendors to ensure partner capacity solutions deliver optimal service, reliability, flexibility, and cost performance. Open to multiple seniority levels (0–10 years' experience). Focused on Southeast Asia, though geographic scope can change based on business priorities. Requires: airline network expertise · commercial acumen · operational understanding · strong project management skills.</div></div><div class="note-block"><div class="note-block-header">🗂️ Key Responsibilities Overview</div><div class="note-block-body"></div></div><div class="table-wrap"><table><tr><th>Area</th><th>Focus</th></tr><tr><td>Partner Network Strategy &amp; Development</td><td>Identify, evaluate, recommend partners; capacity strategies; network analyses; long-term planning</td></tr><tr><td>Partner Selection &amp; Implementation</td><td>Onboarding, cross-functional coordination, implementation plans, system integration</td></tr><tr><td>Network Optimization &amp; Performance</td><td>Monitor performance, improve efficiency, drive refinements, quantitative business cases</td></tr><tr><td>Operational Coordination &amp; Issue Resolution</td><td>Escalation point, disruption resolution, irregular ops recovery, partner relationships</td></tr><tr><td>Analytics &amp; Continuous Improvement</td><td>Planning tools, dashboards, automation, process improvement, operational visibility</td></tr></table></div><div class="note-block"><div class="note-block-header">✅ Minimum Qualifications</div><div class="note-block-body">• Bachelor’s degree in Engineering, Operations Research, Aviation Management, Supply Chain, Logistics, Business, or related field. • 0–10 years of experience in airline network planning, cargo operations, transportation planning, logistics, or related fields. • Experience working with airline partners, interline agreements, transportation providers, or external network operators. • Strong analytical and problem-solving skills — translate data into actionable recommendations. • Experience leading complex cross-functional projects and operational implementations. • Excellent communication, stakeholder management, and relationship-building skills.</div></div><div class="note-block"><div class="note-block-header">⭐ Preferred Qualifications</div><div class="note-block-body">• Experience within an integrated air cargo, express transportation, airline, or logistics environment. • Knowledge of Asia Pacific aviation markets, regulatory environments, and airport operating constraints. • Familiarity with airline scheduling, capacity planning, route economics, and network optimization concepts. • Experience with data analysis tools, automation solutions, visualization platforms, or optimization models. • Understanding of procurement, contract management, and partner performance management processes. • Demonstrated ability to influence decisions across multiple functions and organizational levels.</div></div><div class="note-block"><div class="note-block-header">🧠 Key Competencies</div><div class="note-block-body"></div></div><div class="table-wrap"><table><tr><th>Competency</th></tr><tr><td>Strategic Thinking</td></tr><tr><td>Network Planning &amp; Optimization</td></tr><tr><td>Airline Partnership Management</td></tr><tr><td>Project Leadership</td></tr><tr><td>Operational Excellence</td></tr><tr><td>Commercial &amp; Financial Acumen</td></tr><tr><td>Stakeholder Management</td></tr><tr><td>Data-Driven Decision Making</td></tr><tr><td>Change Management</td></tr><tr><td>Continuous Improvement</td></tr></table></div><div class="note-block"><div class="note-block-header">🏷️ Description Keywords</div><div class="note-block-body"><span class="tag-chip">Air Network Design</span><span class="tag-chip">Air Network Planning</span><span class="tag-chip">ULD Planning</span><span class="tag-chip">Operations Research</span><span class="tag-chip">International Air Linehaul</span><span class="tag-chip">Strategic Network Alliances</span><span class="tag-chip">Business Planning</span><span class="tag-chip">Program &amp; Project Management</span><span class="tag-chip">Business Continuity</span><span class="tag-chip">Crisis Management</span><span class="tag-chip">Product Launches</span><span class="tag-chip">Service Quality</span><span class="tag-chip">Ops Excellence</span><span class="tag-chip">Contingency Planning</span><span class="tag-chip">Road Network Planning</span><span class="tag-chip">Clearance Compliance</span><span class="tag-chip">Customs Solutions</span></div></div></div><div class="page-content active" id="page-kr1"><div class="breadcrumb">Key Responsibilities <span class="breadcrumb-sep">›</span><span>Partner Network Strategy &amp; Development</span><span class="breadcrumb-sep">›</span> Key Responsibilities - 1</div><div class="page-title-bar"><div class="page-icon">🗺️</div><div><div class="page-title">Key Responsibilities - 1</div><div class="page-subtitle">Partner Network Strategy &amp; Development</div><div class="responsibility-pill">📌 Identify, evaluate, and recommend airline, charter, interline, and transportation partners to support evolving network requirements across Asia Pacific.</div></div></div><div class="highlight-box">💡 <strong>Real Meaning:</strong> Solve capacity and service problems using external transportation partners — not just "find airlines."</div><div class="note-block"><div class="note-block-header">🔥 Scenario — What Triggers This Work?</div><div class="note-block-body">Vietnam discovers route SGN → CAN → MEM is overloaded: • Volume growing 20% • Peak season approaching • Existing airline partner nearly full • Service failures increasing Management asks: "We need more capacity from Vietnam to North America." Your job begins.</div></div><div class="note-block"><div class="note-block-header">Step 1 — Understand the Business Need</div><div class="note-block-body"><span class="step-label">Volume</span> Current = 40 tons/day | Forecast = 55 tons/day | Gap = 15 tons/day <span class="step-label">Service Requirement</span> Priority Overnight? International Priority? Economy? Different products = different transit times. <span class="step-label">Geography</span> Ho Chi Minh · Hanoi · Bangkok · Jakarta · Kuala Lumpur — all have different airport constraints.</div></div><div class="note-block"><div class="note-block-header">Step 2 — Identify Potential Partners</div><div class="note-block-body"><strong>Commercial Airlines</strong> Singapore Airlines Cargo · Cathay Cargo · Korean Air Cargo · China Airlines Cargo · EVA Air Cargo · Vietnam Airlines Cargo · ANA Cargo · Japan Airlines Cargo <strong>Charter Providers</strong> (temporary surges): Atlas Air · Kalitta · Air Atlanta <strong>Ground Transportation</strong>: Bonded trucking / linehaul (e.g. Singapore → KL may not need aircraft) <strong>Interline Partners</strong>: Phoenix Express → Cathay Pacific → American Airlines — one shipment across multiple carriers.</div></div><div class="note-block"><div class="note-block-header">Step 3 — Build an Evaluation Matrix</div><div class="note-block-body">Engineers score airlines objectively — not by preference.</div></div><div class="table-wrap"><table><tr><th>Criteria</th><th>Weight</th></tr><tr><td>Capacity</td><td>30%</td></tr><tr><td>On-Time Performance</td><td>20%</td></tr><tr><td>Cost</td><td>20%</td></tr><tr><td>Coverage</td><td>15%</td></tr><tr><td>Reliability</td><td>10%</td></tr><tr><td>Flexibility</td><td>5%</td></tr></table></div><div class="table-wrap"><table><tr><th>Airline</th><th>Score</th></tr><tr><td>CX Cargo</td><td>89</td></tr><tr><td>SQ Cargo</td><td>86</td></tr><tr><td>KE Cargo</td><td>78</td></tr></table></div><div class="note-block"><div class="note-block-header">Steps 4–8 — Evaluate &amp; Assess Risks</div><div class="note-block-body"><span class="step-label">Step 4 — Capacity</span> Need = 15T/day. Partner A = 8T/day. Partner B = 20T/day → Partner B solves it. Ask: Peak season? Lunar New Year? Christmas? Black Friday? Phoenix Express hates surprises. <span class="step-label">Step 5 — Service / Transit Time</span> SGN→HKG→MEM = 36 hrs vs SGN→ICN→MEM = 48 hrs. Cheaper but slower — would customers accept? Reliability metrics: On-time departure · On-time arrival · Missed connections · Damage loss rate <span class="step-label">Step 6 — Cost</span> Airline A $2.50/kg vs Airline B $2.10/kg. But if reliability drops → late deliveries → higher actual cost. Phoenix Express Engineering constantly balances: Cost vs Service vs Capacity. <span class="step-label">Step 7 — Operational Fit</span> Phoenix Express arrives 11:30 PM, partner departs 11:45 PM → operationally impossible. Check: cargo terminal capacity · ULD handling · customs cutoff · security requirements. <span class="step-label">Step 8 — Risks</span> Geopolitical (airspace closures, regional tensions) · Weather (typhoon/monsoon) · Operational (congestion, ground handling)</div></div><div class="note-block"><div class="note-block-header">Step 9 — Recommend Solution</div><div class="note-block-body"><strong>Executive Summary</strong> Current Vietnam-USA lane will face a 15-ton/day shortfall in Q4. Recommendation: 1. Secure additional capacity with Cathay Cargo. 2. Reserve charter contingency option. 3. Add trucking backup from SGN to BKK. 4. Monitor utilisation weekly. Expected benefits: Restore service performance · Add 20 tons/day capacity · Reduce peak-season risk</div></div><div class="note-block"><div class="note-block-header">✅ What Phoenix Express Expects at Engineer Level</div><div class="note-block-body"><ul class="checklist">✅ Analyze data ✅ Build business cases ✅ Work with operations ✅ Manage stakeholders ✅ Conduct root-cause analysis ✅ Recommend solutions logically ✅ Present findings</ul></div></div><div class="note-block"><div class="note-block-header">🔄 How My Current Experience Translates</div><div class="note-block-body"></div></div><div class="table-wrap"><table><tr><th>Current Phoenix Express Experience</th><th>Air Network Role</th></tr><tr><td>SLA monitoring</td><td>Network performance monitoring</td></tr><tr><td>RPI escalation</td><td>Operational disruption management</td></tr><tr><td>CEBS tracking</td><td>Network performance systems</td></tr><tr><td>AWB analysis</td><td>Shipment flow analysis</td></tr><tr><td>Cross-functional coordination</td><td>Airline/vendor coordination</td></tr><tr><td>Power Query reporting</td><td>Network dashboards</td></tr><tr><td>Process improvement</td><td>Network optimization</td></tr></table></div></div><div class="page-content" id="page-kr2"><div class="breadcrumb">Key Responsibilities <span class="breadcrumb-sep">›</span><span>Partner Network Strategy &amp; Development</span><span class="breadcrumb-sep">›</span> Key Responsibilities - 2</div><div class="page-title-bar"><div class="page-icon">📊</div><div><div class="page-title">Key Responsibilities - 2</div><div class="page-subtitle">Partner Network Strategy &amp; Development</div><div class="responsibility-pill">📌 Develop market-specific capacity strategies to support growth opportunities, customer requirements, and operational resilience.</div></div></div><div class="highlight-box">💡 <strong>Core Question:</strong> How much capacity do we need, where, when, and what backup plans exist if something goes wrong?</div><div class="note-block"><div class="note-block-header">🌏 Market-Specific Challenges</div><div class="note-block-body">One strategy does not fit all markets. Your job is to create a capacity plan for each market.</div></div><div class="table-wrap"><table><tr><th>Market</th><th>Typical Challenge</th></tr><tr><td>Vietnam</td><td>Rapid export growth</td></tr><tr><td>Singapore</td><td>High cost, limited slots</td></tr><tr><td>Indonesia</td><td>Geographic fragmentation</td></tr><tr><td>Thailand</td><td>Seasonal agriculture exports</td></tr><tr><td>Philippines</td><td>Typhoons</td></tr><tr><td>China</td><td>Regulatory restrictions</td></tr><tr><td>Australia</td><td>Long transit distances</td></tr></table></div><div class="note-block"><div class="note-block-header">🇻🇳 Example — Vietnam Market</div><div class="note-block-body">Daily volume 2026 = 45 tons/day | Forecast 2027 = 60 tons/day | Growth = +15 tons/day (+33%) Current partner capacity = 55 tons/day | Forecast demand = 60 tons/day <strong>Shortfall = 5 tons/day → Capacity strategy needed.</strong></div></div><div class="note-block"><div class="note-block-header">Step 1 — Understand Customer Requirements</div><div class="note-block-body">Not all shipments are equal. Healthcare may require cold chain, fastest transit, reliable routing. Economy can tolerate slower routes.</div></div><div class="table-wrap"><table><tr><th>Product</th><th>%</th></tr><tr><td>International Priority</td><td>70%</td></tr><tr><td>Economy</td><td>20%</td></tr><tr><td>Dangerous Goods</td><td>5%</td></tr><tr><td>Healthcare</td><td>5%</td></tr></table></div><div class="note-block"><div class="note-block-header">Step 2 — Understand Growth Drivers</div><div class="note-block-body"><strong>Manufacturing Growth</strong> — Vietnam exports electronics, semiconductors, garments. New factories opened. <strong>New Phoenix Express Customers</strong> — Samsung, Intel, Foxconn suppliers → volume spikes. <strong>E-commerce Growth</strong> — Customer expectation: 2–3 day delivery → capacity must increase accordingly.</div></div><div class="note-block"><div class="note-block-header">Step 3 — Create Capacity Plan</div><div class="note-block-body">Normal Capacity (regular airline agreements) = 50 tons/day Growth Capacity (additional contracted) = +15 tons/day Contingency Capacity (alternate carriers, charter, linehaul trucking) = +10 tons/day <strong>Total = 75 tons/day</strong></div></div><div class="note-block"><div class="note-block-header">Step 4 — Build Operational Resilience</div><div class="note-block-body"><span class="step-label">Scenario A — Typhoon hits HKG</span> Normal: SGN → HKG. Flights cancelled. Backup: SGN → ICN or SGN → TPE. Plan developed BEFORE the disruption happens. <span class="step-label">Scenario B — Partner Airline Loses Capacity</span> Current partner: 20T/day → suddenly 10T/day. Can another airline cover the gap? That should already be documented.</div></div><div class="note-block"><div class="note-block-header">Step 5 — Seasonal Strategy</div><div class="note-block-body">Peak Season: September–December (Black Friday, Christmas, Year-end manufacturing) → Volume surge +40%</div></div><div class="table-wrap"><table><tr><th>Period</th><th>Capacity</th></tr><tr><td>Normal</td><td>50 tons</td></tr><tr><td>Peak</td><td>70 tons</td></tr><tr><td>Emergency</td><td>80+ tons</td></tr></table></div><div class="note-block"><div class="note-block-header">Step 6 — Use Data</div><div class="note-block-body">Daily Volume: Actual vs Forecast vs Variance Capacity Utilisation: Capacity = 50T | Used = 46T | Utilisation = 92% → High risk Lane Performance (SGN-HKG, HAN-CAN, BKK-SIN): delay % · cost/kg · throughput · transit performance</div></div><div class="note-block"><div class="note-block-header">📋 Management Recommendation Template</div><div class="note-block-body"><strong>Vietnam Capacity Strategy 2027</strong> Current State: Demand forecast 60T/day | Existing capacity 55T/day Risk: Capacity shortfall during Q4 | Increased dependency on single carrier Recommendations: 1. Secure additional 10T/day with Cathay Cargo. 2. Reserve seasonal charter capacity for October–December. 3. Establish backup routing through Seoul. 4. Implement weekly utilisation monitoring dashboard. 5. Create disruption playbook for typhoon season. Expected Outcome: Capacity increased to 70T/day · Improved resilience · Reduced service failure risk</div></div><div class="note-block"><div class="note-block-header">🔄 Current Role → Air Network Strategy</div><div class="note-block-body"></div></div><div class="table-wrap"><table><tr><th>Current Role</th><th>Air Network Strategy</th></tr><tr><td>Monitor SLA risk</td><td>Monitor network capacity risk</td></tr><tr><td>Escalate RPI cases</td><td>Escalate network disruptions</td></tr><tr><td>Analyse ageing reports</td><td>Analyse utilisation reports</td></tr><tr><td>Coordinate stations</td><td>Coordinate airlines &amp; vendors</td></tr><tr><td>RCA investigations</td><td>Network performance investigations</td></tr><tr><td>Build Power Query dashboards</td><td>Build network dashboards</td></tr><tr><td>Create contingency plans</td><td>Create routing contingency plans</td></tr></table></div><div class="highlight-box">📚 <strong>Key Language to Learn:</strong><span class="tag-chip">Capacity planning</span><span class="tag-chip">Load factor</span><span class="tag-chip">Yield</span><span class="tag-chip">Transit time</span><span class="tag-chip">Route network</span><span class="tag-chip">Interline agreements</span><span class="tag-chip">ULDs</span><span class="tag-chip">Block space agreements</span><span class="tag-chip">Aircraft utilisation</span></div></div><div class="page-content" id="page-kr3"><div class="breadcrumb">Key Responsibilities <span class="breadcrumb-sep">›</span><span>Partner Network Strategy &amp; Development</span><span class="breadcrumb-sep">›</span> Key Responsibilities - 3</div><div class="page-title-bar"><div class="page-icon">🔬</div><div><div class="page-title">Key Responsibilities - 3</div><div class="page-subtitle">Partner Network Strategy &amp; Development</div><div class="responsibility-pill">📌 Conduct network analyses to determine optimal partner solutions based on service performance, capacity availability, transit times, and cost.</div></div></div><div class="highlight-box">💡 This is where you stop being an operations coordinator and start thinking like a network engineer.</div><div class="note-block"><div class="note-block-header">📧 Your Assignment (Week 2 on the Job)</div><div class="note-block-body">Ben, We are seeing increasing volume from Vietnam to North America. Please evaluate potential partner options and recommend the optimal solution for Q4. Consider: Service performance · Capacity availability · Transit times · Cost You now own this project.</div></div><div class="note-block"><div class="note-block-header">Step 1 — Define the Problem First</div><div class="note-block-body">Biggest mistake: analysing airlines before understanding the problem.</div></div><div class="table-wrap"><table><tr><th>Metric</th><th>Value</th></tr><tr><td>Origin</td><td>SGN</td></tr><tr><td>Destination</td><td>MEM</td></tr><tr><td>Current Volume</td><td>40 T/day</td></tr><tr><td>Forecast Volume</td><td>55 T/day</td></tr><tr><td>Gap</td><td>15 T/day</td></tr></table></div><div class="note-block"><div class="note-block-header">Step 2 — Gather Candidate Partners</div><div class="note-block-body">Cathay Cargo · Korean Air Cargo · EVA Cargo · China Airlines Cargo <em>Do not recommend anything yet.</em></div></div><div class="note-block"><div class="note-block-header">Step 3 — Service Performance &amp; Capacity</div><div class="note-block-body">Metrics: On-Time Departure · On-Time Arrival · Missed Connection Rate · Service Failure Rate · Claims Rate</div></div><div class="table-wrap"><table><tr><th>Airline</th><th>OTP</th><th>Available Capacity</th></tr><tr><td>Cathay</td><td>95%</td><td>20T/day</td></tr><tr><td>Korean</td><td>93%</td><td>10T/day</td></tr><tr><td>EVA</td><td>96%</td><td>12T/day</td></tr><tr><td>China Airlines</td><td>91%</td><td>18T/day</td></tr></table></div><div class="note-block"><div class="note-block-header">Step 4 &amp; 5 — Transit Time &amp; Cost</div><div class="note-block-body">Customers don't buy aircraft. Customers buy transit time.</div></div><div class="table-wrap"><table><tr><th>Airline</th><th>Transit</th><th>Cost/kg</th></tr><tr><td>Cathay</td><td>36 hrs</td><td>$2.60</td></tr><tr><td>Korean</td><td>40 hrs</td><td>$2.35</td></tr><tr><td>EVA</td><td>38 hrs</td><td>$2.50</td></tr><tr><td>China Airlines</td><td>42 hrs</td><td>$2.20</td></tr></table></div><div class="highlight-box">⚠️ China Airlines looks cheapest — but if reliability drops → late deliveries → claims → higher actual cost.</div><div class="note-block"><div class="note-block-header">Step 6 — Multi-Criteria Analysis</div><div class="note-block-body"></div></div><div class="table-wrap"><table><tr><th>Criteria</th><th>Weight</th></tr><tr><td>Service Performance</td><td>30%</td></tr><tr><td>Capacity</td><td>25%</td></tr><tr><td>Transit Time</td><td>25%</td></tr><tr><td>Cost</td><td>20%</td></tr></table></div><div class="table-wrap"><table><tr><th>Airline</th><th>Final Score</th></tr><tr><td>Cathay</td><td>91</td></tr><tr><td>EVA</td><td>88</td></tr><tr><td>Korean</td><td>84</td></tr><tr><td>China Airlines</td><td>80</td></tr></table></div><div class="scenario-box">🗣️ <strong>Engineering Language:</strong> "Based on the weighted evaluation model, Cathay achieved the highest overall score due to strong service reliability and sufficient available capacity." — Not "I think Cathay is better."</div><div class="note-block"><div class="note-block-header">Step 7 — Operational Fit</div><div class="note-block-body">• Will arrival timing support sort operations? • Can Customs clear in time? • Is ground handling available? • Do they accept Dangerous Goods? • Are there ULD compatibility issues? • Can they support peak-season overflow? Example: Airline scores highly but arrives 03:00 AM while Phoenix Express sort closes at 01:00 AM → much less attractive.</div></div><div class="note-block"><div class="note-block-header">Step 8 — Risk Assessment</div><div class="note-block-body"><strong>Cathay</strong> — Advantages: Strong service history, high capacity | Risks: Heavy HKG hub dependency, typhoon disruption risk <strong>Korean Air</strong> — Advantages: Strong reliability | Risks: Limited capacity allocation <strong>EVA</strong> — Advantages: Balanced cost and service | Risks: Limited expansion flexibility</div></div><div class="note-block"><div class="note-block-header">Step 9 — Build Business Case</div><div class="note-block-body"><strong>Primary Partner: Cathay Cargo</strong> Meets 15T/day requirement · Fastest transit · Strong OTP · Supports Q4 peak growth <strong>Secondary Option: EVA Cargo</strong> Backup capacity · Additional resilience · Competitive pricing <strong>Contingency: Pre-arranged charter provider</strong> Use during: Peak season · Network disruptions · Weather events</div></div><div class="note-block"><div class="note-block-header">✅ What Management REALLY Wants</div><div class="note-block-body"><ul class="checklist">✅ What is the problem?✅ What data proves it?✅ What options exist?✅ What are the tradeoffs?✅ What is the best recommendation?✅ What risks remain?✅ Why should management trust this decision?</ul></div></div><div class="note-block"><div class="note-block-header">🔄 RPI Thinking → Network Planning Thinking</div><div class="note-block-body"></div></div><div class="table-wrap"><table><tr><th>Current RPI Thinking</th><th>Network Planning Thinking</th></tr><tr><td>What happened?</td><td>What's the capacity problem?</td></tr><tr><td>Why did it happen?</td><td>Why is it occurring?</td></tr><tr><td>Which station owns it?</td><td>Which partner can help?</td></tr><tr><td>What's the impact?</td><td>What's the business impact?</td></tr><tr><td>What are my options?</td><td>What are my options?</td></tr><tr><td>What's the best recovery action?</td><td>What's the optimal solution?</td></tr></table></div><div class="scenario-box">🎯 The framework is almost identical. Instead of analysing AWBs and exceptions, you're analysing lanes, capacity, transit times, costs, and partner performance.</div></div></main></div><footer class="site-footer">Operational Transition Practice Scenario: RPI Operations to Air Network Engineering | <span>© 2026 <a href="https://PhoenixFlix.Vercel.app" target="_blank">PhoenixFlix</a></span> | <a href="#">https://github.com/PhoenixWeaver</a></footer><script>function toggleSection(e){const t=document.getElementById(e),o=document.getElementById(e+"-body");t.classList.toggle("collapsed"),o.style.display=t.classList.contains("collapsed")?"none":""}function toggleSubsection(e){const t=document.getElementById(e),o=document.getElementById(e+"-body");t.classList.toggle("collapsed"),o.style.display=t.classList.contains("collapsed")?"none":""}function showPage(e){document.querySelectorAll(".nav-page").forEach(t=>t.classList.toggle("active",t.dataset.page===e)),document.querySelectorAll(".page-content").forEach(t=>t.classList.toggle("active",t.id==="page-"+e)),document.querySelector(".content-area").scrollTop=0}document.getElementById("searchInput").addEventListener("input",function(){const e=this.value.toLowerCase().trim();e&&["demo","jd","kr1","kr2","kr3"].forEach(t=>{const o=document.getElementById("page-"+t);o&&o.innerText.toLowerCase().includes(e)&&showPage(t)})})</script><script>(function() { 'use strict'; /* Disable right-click */ document.addEventListener('contextmenu', e => e.preventDefault()); /* Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U */ document.addEventListener('keydown', e => { if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) || (e.ctrlKey && e.key === 'U')) { e.preventDefault(); } }); /* Disable selection and dragging */ document.addEventListener('selectstart', e => e.preventDefault()); document.addEventListener('dragstart', e => e.preventDefault()); console.log('%cSTOP!', 'color: red; font-size: 50px; font-weight: bold;'); console.log('%cProtected Content. © PhoenixFlix', 'color: white; font-size: 16px; background: red; padding: 5px;');})();</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Network Operations &amp; Engineering Competency Development Plan</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%237b5ea7'/%3E%3Cpath d='M14 2L6 13h5v7l8-11h-5z' fill='%23fff'/%3E%3C/svg%3E" />
+<style>
+:root {
+  --primary: #7b5ea7; --primary-light: #ede8fb; --secondary: #4a90d9;
+  --bg: #f1f5f9; --card-bg: #fff; --text-main: #1e1a2e;
+  --text-muted: #9a88c0; --border: #e0d8f5;
+  --shadow: 0 4px 12px rgba(120,90,180,0.08);
+  --gradient: linear-gradient(135deg, #7b5ea7, #4a90d9);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--text-main); display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+
+/* Topbar */
+.topbar { display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 64px; background: #fff; border-bottom: 1px solid var(--border); flex-shrink: 0; box-shadow: 0 1px 4px rgba(120,90,180,0.08); z-index: 100; }
+.topbar-left { display: flex; align-items: center; gap: 12px; }
+.topbar-logo { width: 32px; height: 32px; background: var(--gradient); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 1.1rem; }
+.topbar-title { font-size: 1.1rem; font-weight: 700; color: #3b2a6e; }
+.search-wrap { position: relative; width: 240px; }
+.search-wrap input { width: 100%; padding: 8px 14px 8px 36px; border-radius: 10px; border: 1.5px solid #d0c4f0; background: #faf8ff; font-size: 0.88rem; outline: none; transition: all 0.2s; }
+.search-wrap input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(123,94,167,0.1); }
+.search-icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); opacity: 0.4; display: flex; }
+
+/* Layout */
+.app-main { display: flex; flex: 1; overflow: hidden; }
+
+/* Sidebar — 3-level OneNote style */
+.sidebar { width: 270px; background: #fff; border-right: 1px solid var(--border); overflow-y: auto; flex-shrink: 0; scrollbar-width: none; }
+.sidebar::-webkit-scrollbar { display: none; }
+
+/* Level 1 — Section (Key Responsibilities) */
+.nav-section { background: var(--gradient); color: #fff; padding: 12px 16px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+.nav-section svg { opacity: 0.85; flex-shrink: 0; }
+.nav-section-chevron { margin-left: auto; transition: transform 0.2s; }
+.nav-section.collapsed .nav-section-chevron { transform: rotate(-90deg); }
+
+/* Level 2 — Sub-section (Partner Network Strategy & Development) */
+.nav-subsection { background: #f0ebff; border-left: 4px solid var(--primary); padding: 10px 16px 10px 20px; font-size: 0.8rem; font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+.nav-subsection svg { opacity: 0.7; flex-shrink: 0; }
+.nav-subsection-chevron { margin-left: auto; transition: transform 0.2s; }
+.nav-subsection.collapsed .nav-subsection-chevron { transform: rotate(-90deg); }
+.nav-subsection-children { }
+
+/* Level 3 — Pages */
+.nav-page { padding: 9px 16px 9px 36px; cursor: pointer; font-size: 0.88rem; color: #5a3ea0; display: flex; align-items: center; gap: 9px; transition: all 0.15s; border-left: 3px solid transparent; }
+.nav-page:hover { background: #f8f6ff; color: var(--primary); }
+.nav-page.active { background: #ede8fb; color: var(--primary); font-weight: 600; border-left-color: var(--primary); }
+.nav-page-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--primary); opacity: 0.35; flex-shrink: 0; }
+.nav-page.active .nav-page-dot { opacity: 1; }
+.nav-page-bullet { font-size: 0.68rem; color: var(--text-muted); margin-top: 2px; line-height: 1.3; padding-left: 15px; }
+
+/* Content */
+.content-area { flex: 1; overflow-y: auto; padding: 36px 40px; scrollbar-width: thin; }
+.page-content { display: none; max-width: 860px; margin: 0 auto; animation: fadeIn 0.3s ease-out; }
+.page-content.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Breadcrumb */
+.breadcrumb { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 20px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.breadcrumb span { color: var(--primary); font-weight: 600; }
+.breadcrumb-sep { opacity: 0.4; }
+
+/* Page title */
+.page-title-bar { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 2px solid var(--border); }
+.page-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--gradient); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+.page-title { font-size: 1.55rem; font-weight: 800; color: #2a2040; line-height: 1.2; }
+.page-subtitle { font-size: 0.82rem; color: var(--text-muted); margin-top: 5px; }
+.responsibility-pill { display: inline-flex; align-items: center; gap: 6px; background: var(--primary-light); color: var(--primary); font-size: 0.78rem; font-weight: 700; padding: 5px 14px; border-radius: 20px; margin-top: 10px; border: 1px solid var(--border); }
+
+/* Blocks */
+.note-block { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; margin-bottom: 18px; overflow: hidden; box-shadow: 0 2px 6px rgba(120,90,180,0.04); }
+.note-block-header { padding: 10px 18px; background: var(--primary-light); border-bottom: 1px solid var(--border); font-size: 0.72rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.08em; display: flex; align-items: center; gap: 7px; }
+.note-block-body { padding: 16px 20px; font-size: 0.91rem; line-height: 1.75; color: #3a2e5a; white-space: pre-wrap; }
+.highlight-box { background: #fffbf0; border: 1px solid #f5e0a0; border-radius: 10px; padding: 13px 17px; margin: 12px 0; font-size: 0.88rem; color: #7e5c1a; line-height: 1.6; }
+.scenario-box { background: #f0f7ff; border: 1px solid #c0d8f5; border-radius: 10px; padding: 13px 17px; margin: 12px 0; font-size: 0.88rem; color: #1a4a7e; line-height: 1.6; }
+.step-label { display: inline-block; background: var(--gradient); color: #fff; font-size: 0.68rem; font-weight: 800; padding: 3px 10px; border-radius: 20px; margin-bottom: 5px; letter-spacing: 0.04em; }
+.table-wrap { overflow-x: auto; margin: 0 0 18px; border-radius: 10px; border: 1px solid var(--border); overflow: hidden; }
+table { border-collapse: collapse; width: 100%; font-size: 0.87rem; }
+th { background: var(--primary-light); color: var(--primary); padding: 8px 14px; text-align: left; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+td { padding: 8px 14px; border-bottom: 1px solid var(--border); color: #3a2e5a; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #faf8ff; }
+.tag-chip { display: inline-block; background: var(--primary-light); color: var(--primary); font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin: 2px 3px; }
+.checklist { list-style: none; padding: 0; }
+.checklist li { padding: 5px 0 5px 26px; position: relative; font-size: 0.9rem; color: #3a2e5a; border-bottom: 1px solid #f5f0ff; }
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before { content: "✅"; position: absolute; left: 0; font-size: 0.82rem; }
+
+/* Footer */
+.site-footer { padding: 12px 24px; background: #fff; border-top: 1px solid var(--border); text-align: center; font-size: 0.73rem; color: var(--text-muted); flex-shrink: 0; }
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d0c4f0; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #c0b0e0; }
+@media (max-width: 768px) { .sidebar { display: none; } .content-area { padding: 20px; } }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <div class="topbar-logo">BT</div>
+    <span class="topbar-title">Air Network Operations &amp; Engineering Competency Development Plan</span>
+  </div>
+  <div class="search-wrap">
+    <span class="search-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+    <input type="text" id="searchInput" placeholder="Search pages...">
+  </div>
+</header>
+
+<div class="app-main">
+  <aside class="sidebar">
+
+    <!-- Level 1: Section — Job Description -->
+    <div class="nav-section" id="sec-jd" onclick="toggleSection('sec-jd')">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      Job Description
+      <svg class="nav-section-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div id="sec-jd-body">
+      <div class="nav-page" data-page="jd" onclick="showPage('jd')">
+        <span class="nav-page-dot"></span> Descriptions and Requirements
+      </div>
+      <div class="nav-page-bullet">• Engineer – Air Network &amp; Partner Management</div>
+    </div>
+
+    <!-- Level 1: Section — Demo Disclaimer -->
+    <div class="nav-section" id="sec-demo" onclick="toggleSection('sec-demo')">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      Demo Disclaimer
+      <svg class="nav-section-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div id="sec-demo-body">
+      <div class="nav-page" data-page="demo" onclick="showPage('demo')">
+        <span class="nav-page-dot"></span>Full Plan not Online
+      </div>
+      <div class="nav-page-bullet">• Detail plans &amp; all Key Responsibilities, Key Competencies, and Steps/Scenarios are available upon internal discussion</div>
+    </div>
+
+    <!-- Level 1: Section — Key Responsibilities -->
+    <div class="nav-section" id="sec-kr" onclick="toggleSection('sec-kr')">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      Key Responsibilities
+      <svg class="nav-section-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+
+    <!-- Level 2: Sub-section -->
+    <div id="sec-kr-body">
+      <div class="nav-subsection" id="subsec-pnsd" onclick="toggleSubsection('subsec-pnsd')">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        Partner Network Strategy &amp; Development
+        <svg class="nav-subsection-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+
+      <!-- Level 3: Pages -->
+      <div class="nav-subsection-children" id="subsec-pnsd-body">
+        <div class="nav-page active" data-page="kr1" onclick="showPage('kr1')">
+          <span class="nav-page-dot"></span>Key Responsibilities - 1
+        </div>
+        <div class="nav-page-bullet">• Identify, evaluate &amp; recommend partners</div>
+        <div class="nav-page" data-page="kr2" onclick="showPage('kr2')">
+          <span class="nav-page-dot"></span>Key Responsibilities - 2
+        </div>
+        <div class="nav-page-bullet">• Develop market-specific capacity strategies</div>
+        <div class="nav-page" data-page="kr3" onclick="showPage('kr3')">
+          <span class="nav-page-dot"></span>Key Responsibilities - 3
+        </div>
+        <div class="nav-page-bullet">• Conduct network analyses &amp; optimal solutions</div>
+      </div>
+    </div>
+
+  </aside>
+
+  <main class="content-area">
+
+    <!-- Page: Demo Disclaimer -->
+    <div class="page-content" id="page-demo">
+      <div class="breadcrumb">
+        <span>Demo Disclaimer</span> <span class="breadcrumb-sep">›</span> Full Plan not Online
+      </div>
+      <div class="page-title-bar">
+        <div class="page-icon">🔒</div>
+        <div>
+          <div class="page-title">Full Plan not Online</div>
+          <div class="page-subtitle">Demo Disclaimer</div>
+        </div>
+      </div>
+      <div class="highlight-box" style="font-size:1rem;padding:24px 28px;line-height:1.9;">
+        📌 <strong>Detail plans and All steps are Available upon internal discussion.</strong>
+      </div>
+      <div class="note-block">
+        <div class="note-block-header">ℹ️ About This Demo</div>
+        <div class="note-block-body">This viewer presents a curated overview of the Air Network Operations &amp; Engineering Competency Development Plan.
+
+The full version — including complete step-by-step breakdowns, scenario walkthroughs, practice exercises, self-assessment frameworks, and onboarding roadmaps — is not published online.
+
+For access to the complete plan, please reach out directly for an internal discussion.</div>
+      </div>
+    </div>
+
+    <!-- Page: JD -->
+    <div class="page-content" id="page-jd">
+      <div class="breadcrumb">
+        <span>Job Description</span> <span class="breadcrumb-sep">›</span> JD
+      </div>
+      <div class="page-title-bar">
+        <div class="page-icon">📄</div>
+        <div>
+          <div class="page-title">Engineer – Air Network &amp; Partner Management</div>
+          <div class="page-subtitle">Federal Express Corporation AMEA (Phoenix Express) &middot; Job ID: RC781658 &middot; Full-time, Professional, Regular (44 hrs/week)</div>
+          <div class="responsibility-pill">📍 SG &HCMC % Jupiter </div>
+        </div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">📋 Position Summary</div>
+        <div class="note-block-body">The Engineer / Senior Engineer, Partner Network Management is responsible for the strategic planning, development, implementation, and ongoing optimization of third-party air network capacity across Asia Pacific.
+
+This role serves as a key liaison between network planning, airline partners, operations, procurement, commercial teams, and external vendors to ensure partner capacity solutions deliver optimal service, reliability, flexibility, and cost performance.
+
+Open to multiple seniority levels (0–10 years' experience). Focused on Southeast Asia, though geographic scope can change based on business priorities.
+
+Requires: airline network expertise · commercial acumen · operational understanding · strong project management skills.</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">🗂️ Key Responsibilities Overview</div>
+        <div class="note-block-body"></div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Area</th><th>Focus</th></tr>
+        <tr><td>Partner Network Strategy &amp; Development</td><td>Identify, evaluate, recommend partners; capacity strategies; network analyses; long-term planning</td></tr>
+        <tr><td>Partner Selection &amp; Implementation</td><td>Onboarding, cross-functional coordination, implementation plans, system integration</td></tr>
+        <tr><td>Network Optimization &amp; Performance</td><td>Monitor performance, improve efficiency, drive refinements, quantitative business cases</td></tr>
+        <tr><td>Operational Coordination &amp; Issue Resolution</td><td>Escalation point, disruption resolution, irregular ops recovery, partner relationships</td></tr>
+        <tr><td>Analytics &amp; Continuous Improvement</td><td>Planning tools, dashboards, automation, process improvement, operational visibility</td></tr>
+      </table></div>
+
+      <div class="note-block">
+        <div class="note-block-header">✅ Minimum Qualifications</div>
+        <div class="note-block-body">• Bachelor’s degree in Engineering, Operations Research, Aviation Management, Supply Chain, Logistics, Business, or related field.
+• 0–10 years of experience in airline network planning, cargo operations, transportation planning, logistics, or related fields.
+• Experience working with airline partners, interline agreements, transportation providers, or external network operators.
+• Strong analytical and problem-solving skills — translate data into actionable recommendations.
+• Experience leading complex cross-functional projects and operational implementations.
+• Excellent communication, stakeholder management, and relationship-building skills.</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">⭐ Preferred Qualifications</div>
+        <div class="note-block-body">• Experience within an integrated air cargo, express transportation, airline, or logistics environment.
+• Knowledge of Asia Pacific aviation markets, regulatory environments, and airport operating constraints.
+• Familiarity with airline scheduling, capacity planning, route economics, and network optimization concepts.
+• Experience with data analysis tools, automation solutions, visualization platforms, or optimization models.
+• Understanding of procurement, contract management, and partner performance management processes.
+• Demonstrated ability to influence decisions across multiple functions and organizational levels.</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">🧠 Key Competencies</div>
+        <div class="note-block-body"></div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Competency</th></tr>
+        <tr><td>Strategic Thinking</td></tr>
+        <tr><td>Network Planning &amp; Optimization</td></tr>
+        <tr><td>Airline Partnership Management</td></tr>
+        <tr><td>Project Leadership</td></tr>
+        <tr><td>Operational Excellence</td></tr>
+        <tr><td>Commercial &amp; Financial Acumen</td></tr>
+        <tr><td>Stakeholder Management</td></tr>
+        <tr><td>Data-Driven Decision Making</td></tr>
+        <tr><td>Change Management</td></tr>
+        <tr><td>Continuous Improvement</td></tr>
+      </table></div>
+
+      <div class="note-block">
+        <div class="note-block-header">🏷️ Description Keywords</div>
+        <div class="note-block-body"><span class="tag-chip">Air Network Design</span><span class="tag-chip">Air Network Planning</span><span class="tag-chip">ULD Planning</span><span class="tag-chip">Operations Research</span><span class="tag-chip">International Air Linehaul</span><span class="tag-chip">Strategic Network Alliances</span><span class="tag-chip">Business Planning</span><span class="tag-chip">Program &amp; Project Management</span><span class="tag-chip">Business Continuity</span><span class="tag-chip">Crisis Management</span><span class="tag-chip">Product Launches</span><span class="tag-chip">Service Quality</span><span class="tag-chip">Ops Excellence</span><span class="tag-chip">Contingency Planning</span><span class="tag-chip">Road Network Planning</span><span class="tag-chip">Clearance Compliance</span><span class="tag-chip">Customs Solutions</span></div>
+      </div>
+    </div>
+
+    <!-- Page: KR1 -->
+    <div class="page-content active" id="page-kr1">
+      <div class="breadcrumb">
+        Key Responsibilities <span class="breadcrumb-sep">›</span>
+        <span>Partner Network Strategy &amp; Development</span> <span class="breadcrumb-sep">›</span>
+        Key Responsibilities - 1
+      </div>
+      <div class="page-title-bar">
+        <div class="page-icon">🗺️</div>
+        <div>
+          <div class="page-title">Key Responsibilities - 1</div>
+          <div class="page-subtitle">Partner Network Strategy &amp; Development</div>
+          <div class="responsibility-pill">📌 Identify, evaluate, and recommend airline, charter, interline, and transportation partners to support evolving network requirements across Asia Pacific.</div>
+        </div>
+      </div>
+
+      <div class="highlight-box">💡 <strong>Real Meaning:</strong> Solve capacity and service problems using external transportation partners — not just "find airlines."</div>
+
+      <div class="note-block">
+        <div class="note-block-header">🔥 Scenario — What Triggers This Work?</div>
+        <div class="note-block-body">Vietnam discovers route SGN → CAN → MEM is overloaded:
+• Volume growing 20%
+• Peak season approaching
+• Existing airline partner nearly full
+• Service failures increasing
+
+Management asks: "We need more capacity from Vietnam to North America." Your job begins.</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 1 — Understand the Business Need</div>
+        <div class="note-block-body"><span class="step-label">Volume</span>
+Current = 40 tons/day | Forecast = 55 tons/day | Gap = 15 tons/day
+
+<span class="step-label">Service Requirement</span>
+Priority Overnight? International Priority? Economy? Different products = different transit times.
+
+<span class="step-label">Geography</span>
+Ho Chi Minh · Hanoi · Bangkok · Jakarta · Kuala Lumpur — all have different airport constraints.</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 2 — Identify Potential Partners</div>
+        <div class="note-block-body"><strong>Commercial Airlines</strong>
+Singapore Airlines Cargo · Cathay Cargo · Korean Air Cargo · China Airlines Cargo · EVA Air Cargo · Vietnam Airlines Cargo · ANA Cargo · Japan Airlines Cargo
+
+<strong>Charter Providers</strong> (temporary surges): Atlas Air · Kalitta · Air Atlanta
+
+<strong>Ground Transportation</strong>: Bonded trucking / linehaul (e.g. Singapore → KL may not need aircraft)
+
+<strong>Interline Partners</strong>: Phoenix Express → Cathay Pacific → American Airlines — one shipment across multiple carriers.</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 3 — Build an Evaluation Matrix</div>
+        <div class="note-block-body">Engineers score airlines objectively — not by preference.</div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Criteria</th><th>Weight</th></tr>
+        <tr><td>Capacity</td><td>30%</td></tr>
+        <tr><td>On-Time Performance</td><td>20%</td></tr>
+        <tr><td>Cost</td><td>20%</td></tr>
+        <tr><td>Coverage</td><td>15%</td></tr>
+        <tr><td>Reliability</td><td>10%</td></tr>
+        <tr><td>Flexibility</td><td>5%</td></tr>
+      </table></div>
+      <div class="table-wrap"><table>
+        <tr><th>Airline</th><th>Score</th></tr>
+        <tr><td>CX Cargo</td><td>89</td></tr>
+        <tr><td>SQ Cargo</td><td>86</td></tr>
+        <tr><td>KE Cargo</td><td>78</td></tr>
+      </table></div>
+
+      <div class="note-block">
+        <div class="note-block-header">Steps 4–8 — Evaluate &amp; Assess Risks</div>
+        <div class="note-block-body"><span class="step-label">Step 4 — Capacity</span>
+Need = 15T/day. Partner A = 8T/day. Partner B = 20T/day → Partner B solves it.
+Ask: Peak season? Lunar New Year? Christmas? Black Friday? Phoenix Express hates surprises.
+
+<span class="step-label">Step 5 — Service / Transit Time</span>
+SGN→HKG→MEM = 36 hrs vs SGN→ICN→MEM = 48 hrs. Cheaper but slower — would customers accept?
+Reliability metrics: On-time departure · On-time arrival · Missed connections · Damage loss rate
+
+<span class="step-label">Step 6 — Cost</span>
+Airline A $2.50/kg vs Airline B $2.10/kg. But if reliability drops → late deliveries → higher actual cost.
+Phoenix Express Engineering constantly balances: Cost vs Service vs Capacity.
+
+<span class="step-label">Step 7 — Operational Fit</span>
+Phoenix Express arrives 11:30 PM, partner departs 11:45 PM → operationally impossible.
+Check: cargo terminal capacity · ULD handling · customs cutoff · security requirements.
+
+<span class="step-label">Step 8 — Risks</span>
+Geopolitical (airspace closures, regional tensions) · Weather (typhoon/monsoon) · Operational (congestion, ground handling)</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 9 — Recommend Solution</div>
+        <div class="note-block-body"><strong>Executive Summary</strong>
+Current Vietnam-USA lane will face a 15-ton/day shortfall in Q4.
+
+Recommendation:
+1. Secure additional capacity with Cathay Cargo.
+2. Reserve charter contingency option.
+3. Add trucking backup from SGN to BKK.
+4. Monitor utilisation weekly.
+
+Expected benefits: Restore service performance · Add 20 tons/day capacity · Reduce peak-season risk</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">✅ What Phoenix Express Expects at Engineer Level</div>
+        <div class="note-block-body"><ul class="checklist">
+          ✅ Analyze data  
+          ✅ Build business cases  
+          ✅ Work with operations  
+          ✅ Manage stakeholders 
+          ✅ Conduct root-cause analysis 
+          ✅ Recommend solutions logically 
+          ✅ Present findings  
+        </ul></div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">🔄 How My Current Experience Translates</div>
+        <div class="note-block-body"></div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Current Phoenix Express Experience</th><th>Air Network Role</th></tr>
+        <tr><td>SLA monitoring</td><td>Network performance monitoring</td></tr>
+        <tr><td>RPI escalation</td><td>Operational disruption management</td></tr>
+        <tr><td>CEBS tracking</td><td>Network performance systems</td></tr>
+        <tr><td>AWB analysis</td><td>Shipment flow analysis</td></tr>
+        <tr><td>Cross-functional coordination</td><td>Airline/vendor coordination</td></tr>
+        <tr><td>Power Query reporting</td><td>Network dashboards</td></tr>
+        <tr><td>Process improvement</td><td>Network optimization</td></tr>
+      </table></div>
+    </div>
+
+    <!-- Page: KR2 -->
+    <div class="page-content" id="page-kr2">
+      <div class="breadcrumb">
+        Key Responsibilities <span class="breadcrumb-sep">›</span>
+        <span>Partner Network Strategy &amp; Development</span> <span class="breadcrumb-sep">›</span>
+        Key Responsibilities - 2
+      </div>
+      <div class="page-title-bar">
+        <div class="page-icon">📊</div>
+        <div>
+          <div class="page-title">Key Responsibilities - 2</div>
+          <div class="page-subtitle">Partner Network Strategy &amp; Development</div>
+          <div class="responsibility-pill">📌 Develop market-specific capacity strategies to support growth opportunities, customer requirements, and operational resilience.</div>
+        </div>
+      </div>
+
+      <div class="highlight-box">💡 <strong>Core Question:</strong> How much capacity do we need, where, when, and what backup plans exist if something goes wrong?</div>
+
+      <div class="note-block">
+        <div class="note-block-header">🌏 Market-Specific Challenges</div>
+        <div class="note-block-body">One strategy does not fit all markets. Your job is to create a capacity plan for each market.</div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Market</th><th>Typical Challenge</th></tr>
+        <tr><td>Vietnam</td><td>Rapid export growth</td></tr>
+        <tr><td>Singapore</td><td>High cost, limited slots</td></tr>
+        <tr><td>Indonesia</td><td>Geographic fragmentation</td></tr>
+        <tr><td>Thailand</td><td>Seasonal agriculture exports</td></tr>
+        <tr><td>Philippines</td><td>Typhoons</td></tr>
+        <tr><td>China</td><td>Regulatory restrictions</td></tr>
+        <tr><td>Australia</td><td>Long transit distances</td></tr>
+      </table></div>
+
+      <div class="note-block">
+        <div class="note-block-header">🇻🇳 Example — Vietnam Market</div>
+        <div class="note-block-body">Daily volume 2026 = 45 tons/day | Forecast 2027 = 60 tons/day | Growth = +15 tons/day (+33%)
+Current partner capacity = 55 tons/day | Forecast demand = 60 tons/day
+<strong>Shortfall = 5 tons/day → Capacity strategy needed.</strong></div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 1 — Understand Customer Requirements</div>
+        <div class="note-block-body">Not all shipments are equal. Healthcare may require cold chain, fastest transit, reliable routing. Economy can tolerate slower routes.</div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Product</th><th>%</th></tr>
+        <tr><td>International Priority</td><td>70%</td></tr>
+        <tr><td>Economy</td><td>20%</td></tr>
+        <tr><td>Dangerous Goods</td><td>5%</td></tr>
+        <tr><td>Healthcare</td><td>5%</td></tr>
+      </table></div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 2 — Understand Growth Drivers</div>
+        <div class="note-block-body"><strong>Manufacturing Growth</strong> — Vietnam exports electronics, semiconductors, garments. New factories opened.
+<strong>New Phoenix Express Customers</strong> — Samsung, Intel, Foxconn suppliers → volume spikes.
+<strong>E-commerce Growth</strong> — Customer expectation: 2–3 day delivery → capacity must increase accordingly.</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 3 — Create Capacity Plan</div>
+        <div class="note-block-body">Normal Capacity (regular airline agreements) = 50 tons/day
+Growth Capacity (additional contracted) = +15 tons/day
+Contingency Capacity (alternate carriers, charter, linehaul trucking) = +10 tons/day
+<strong>Total = 75 tons/day</strong></div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 4 — Build Operational Resilience</div>
+        <div class="note-block-body"><span class="step-label">Scenario A — Typhoon hits HKG</span>
+Normal: SGN → HKG. Flights cancelled.
+Backup: SGN → ICN or SGN → TPE. Plan developed BEFORE the disruption happens.
+
+<span class="step-label">Scenario B — Partner Airline Loses Capacity</span>
+Current partner: 20T/day → suddenly 10T/day.
+Can another airline cover the gap? That should already be documented.</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 5 — Seasonal Strategy</div>
+        <div class="note-block-body">Peak Season: September–December (Black Friday, Christmas, Year-end manufacturing) → Volume surge +40%</div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Period</th><th>Capacity</th></tr>
+        <tr><td>Normal</td><td>50 tons</td></tr>
+        <tr><td>Peak</td><td>70 tons</td></tr>
+        <tr><td>Emergency</td><td>80+ tons</td></tr>
+      </table></div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 6 — Use Data</div>
+        <div class="note-block-body">Daily Volume: Actual vs Forecast vs Variance
+Capacity Utilisation: Capacity = 50T | Used = 46T | Utilisation = 92% → High risk
+Lane Performance (SGN-HKG, HAN-CAN, BKK-SIN): delay % · cost/kg · throughput · transit performance</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">📋 Management Recommendation Template</div>
+        <div class="note-block-body"><strong>Vietnam Capacity Strategy 2027</strong>
+
+Current State: Demand forecast 60T/day | Existing capacity 55T/day
+Risk: Capacity shortfall during Q4 | Increased dependency on single carrier
+
+Recommendations:
+1. Secure additional 10T/day with Cathay Cargo.
+2. Reserve seasonal charter capacity for October–December.
+3. Establish backup routing through Seoul.
+4. Implement weekly utilisation monitoring dashboard.
+5. Create disruption playbook for typhoon season.
+
+Expected Outcome: Capacity increased to 70T/day · Improved resilience · Reduced service failure risk</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">🔄 Current Role → Air Network Strategy</div>
+        <div class="note-block-body"></div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Current Role</th><th>Air Network Strategy</th></tr>
+        <tr><td>Monitor SLA risk</td><td>Monitor network capacity risk</td></tr>
+        <tr><td>Escalate RPI cases</td><td>Escalate network disruptions</td></tr>
+        <tr><td>Analyse ageing reports</td><td>Analyse utilisation reports</td></tr>
+        <tr><td>Coordinate stations</td><td>Coordinate airlines &amp; vendors</td></tr>
+        <tr><td>RCA investigations</td><td>Network performance investigations</td></tr>
+        <tr><td>Build Power Query dashboards</td><td>Build network dashboards</td></tr>
+        <tr><td>Create contingency plans</td><td>Create routing contingency plans</td></tr>
+      </table></div>
+
+      <div class="highlight-box">📚 <strong>Key Language to Learn:</strong>
+<span class="tag-chip">Capacity planning</span><span class="tag-chip">Load factor</span><span class="tag-chip">Yield</span><span class="tag-chip">Transit time</span><span class="tag-chip">Route network</span><span class="tag-chip">Interline agreements</span><span class="tag-chip">ULDs</span><span class="tag-chip">Block space agreements</span><span class="tag-chip">Aircraft utilisation</span></div>
+    </div>
+
+    <!-- Page: KR3 -->
+    <div class="page-content" id="page-kr3">
+      <div class="breadcrumb">
+        Key Responsibilities <span class="breadcrumb-sep">›</span>
+        <span>Partner Network Strategy &amp; Development</span> <span class="breadcrumb-sep">›</span>
+        Key Responsibilities - 3
+      </div>
+      <div class="page-title-bar">
+        <div class="page-icon">🔬</div>
+        <div>
+          <div class="page-title">Key Responsibilities - 3</div>
+          <div class="page-subtitle">Partner Network Strategy &amp; Development</div>
+          <div class="responsibility-pill">📌 Conduct network analyses to determine optimal partner solutions based on service performance, capacity availability, transit times, and cost.</div>
+        </div>
+      </div>
+
+      <div class="highlight-box">💡 This is where you stop being an operations coordinator and start thinking like a network engineer.</div>
+
+      <div class="note-block">
+        <div class="note-block-header">📧 Your Assignment (Week 2 on the Job)</div>
+        <div class="note-block-body">Ben,
+We are seeing increasing volume from Vietnam to North America.
+Please evaluate potential partner options and recommend the optimal solution for Q4.
+Consider: Service performance · Capacity availability · Transit times · Cost
+
+You now own this project.</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 1 — Define the Problem First</div>
+        <div class="note-block-body">Biggest mistake: analysing airlines before understanding the problem.</div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Metric</th><th>Value</th></tr>
+        <tr><td>Origin</td><td>SGN</td></tr>
+        <tr><td>Destination</td><td>MEM</td></tr>
+        <tr><td>Current Volume</td><td>40 T/day</td></tr>
+        <tr><td>Forecast Volume</td><td>55 T/day</td></tr>
+        <tr><td>Gap</td><td>15 T/day</td></tr>
+      </table></div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 2 — Gather Candidate Partners</div>
+        <div class="note-block-body">Cathay Cargo · Korean Air Cargo · EVA Cargo · China Airlines Cargo
+<em>Do not recommend anything yet.</em></div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 3 — Service Performance &amp; Capacity</div>
+        <div class="note-block-body">Metrics: On-Time Departure · On-Time Arrival · Missed Connection Rate · Service Failure Rate · Claims Rate</div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Airline</th><th>OTP</th><th>Available Capacity</th></tr>
+        <tr><td>Cathay</td><td>95%</td><td>20T/day</td></tr>
+        <tr><td>Korean</td><td>93%</td><td>10T/day</td></tr>
+        <tr><td>EVA</td><td>96%</td><td>12T/day</td></tr>
+        <tr><td>China Airlines</td><td>91%</td><td>18T/day</td></tr>
+      </table></div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 4 &amp; 5 — Transit Time &amp; Cost</div>
+        <div class="note-block-body">Customers don't buy aircraft. Customers buy transit time.</div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Airline</th><th>Transit</th><th>Cost/kg</th></tr>
+        <tr><td>Cathay</td><td>36 hrs</td><td>$2.60</td></tr>
+        <tr><td>Korean</td><td>40 hrs</td><td>$2.35</td></tr>
+        <tr><td>EVA</td><td>38 hrs</td><td>$2.50</td></tr>
+        <tr><td>China Airlines</td><td>42 hrs</td><td>$2.20</td></tr>
+      </table></div>
+      <div class="highlight-box">⚠️ China Airlines looks cheapest — but if reliability drops → late deliveries → claims → higher actual cost.</div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 6 — Multi-Criteria Analysis</div>
+        <div class="note-block-body"></div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Criteria</th><th>Weight</th></tr>
+        <tr><td>Service Performance</td><td>30%</td></tr>
+        <tr><td>Capacity</td><td>25%</td></tr>
+        <tr><td>Transit Time</td><td>25%</td></tr>
+        <tr><td>Cost</td><td>20%</td></tr>
+      </table></div>
+      <div class="table-wrap"><table>
+        <tr><th>Airline</th><th>Final Score</th></tr>
+        <tr><td>Cathay</td><td>91</td></tr>
+        <tr><td>EVA</td><td>88</td></tr>
+        <tr><td>Korean</td><td>84</td></tr>
+        <tr><td>China Airlines</td><td>80</td></tr>
+      </table></div>
+      <div class="scenario-box">🗣️ <strong>Engineering Language:</strong> "Based on the weighted evaluation model, Cathay achieved the highest overall score due to strong service reliability and sufficient available capacity." — Not "I think Cathay is better."</div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 7 — Operational Fit</div>
+        <div class="note-block-body">• Will arrival timing support sort operations?
+• Can Customs clear in time?
+• Is ground handling available?
+• Do they accept Dangerous Goods?
+• Are there ULD compatibility issues?
+• Can they support peak-season overflow?
+
+Example: Airline scores highly but arrives 03:00 AM while Phoenix Express sort closes at 01:00 AM → much less attractive.</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 8 — Risk Assessment</div>
+        <div class="note-block-body"><strong>Cathay</strong> — Advantages: Strong service history, high capacity | Risks: Heavy HKG hub dependency, typhoon disruption risk
+<strong>Korean Air</strong> — Advantages: Strong reliability | Risks: Limited capacity allocation
+<strong>EVA</strong> — Advantages: Balanced cost and service | Risks: Limited expansion flexibility</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">Step 9 — Build Business Case</div>
+        <div class="note-block-body"><strong>Primary Partner: Cathay Cargo</strong>
+Meets 15T/day requirement · Fastest transit · Strong OTP · Supports Q4 peak growth
+
+<strong>Secondary Option: EVA Cargo</strong>
+Backup capacity · Additional resilience · Competitive pricing
+
+<strong>Contingency: Pre-arranged charter provider</strong>
+Use during: Peak season · Network disruptions · Weather events</div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">✅ What Management REALLY Wants</div>
+        <div class="note-block-body"><ul class="checklist">
+          ✅ What is the problem?</li>
+          ✅ What data proves it?</li>
+          ✅ What options exist?</li>
+          ✅ What are the tradeoffs?</li>
+          ✅ What is the best recommendation?</li>
+          ✅ What risks remain?</li>
+          ✅ Why should management trust this decision?</li>
+        </ul></div>
+      </div>
+
+      <div class="note-block">
+        <div class="note-block-header">🔄 RPI Thinking → Network Planning Thinking</div>
+        <div class="note-block-body"></div>
+      </div>
+      <div class="table-wrap"><table>
+        <tr><th>Current RPI Thinking</th><th>Network Planning Thinking</th></tr>
+        <tr><td>What happened?</td><td>What's the capacity problem?</td></tr>
+        <tr><td>Why did it happen?</td><td>Why is it occurring?</td></tr>
+        <tr><td>Which station owns it?</td><td>Which partner can help?</td></tr>
+        <tr><td>What's the impact?</td><td>What's the business impact?</td></tr>
+        <tr><td>What are my options?</td><td>What are my options?</td></tr>
+        <tr><td>What's the best recovery action?</td><td>What's the optimal solution?</td></tr>
+      </table></div>
+      <div class="scenario-box">🎯 The framework is almost identical. Instead of analysing AWBs and exceptions, you're analysing lanes, capacity, transit times, costs, and partner performance.</div>
+    </div>
+
+  </main>
+</div>
+
+<footer class="site-footer"> Operational Transition Practice Scenario: RPI Operations to Air Network Engineering | <span>© 2026 <a href="https://PhoenixFlix.Vercel.app" target="_blank">PhoenixFlix</a></span> |   <a href="#">https://github.com/PhoenixWeaver</a> </footer>
+
+<script>
+function toggleSection(id) {
+  const sec = document.getElementById(id);
+  const body = document.getElementById(id + '-body');
+  sec.classList.toggle('collapsed');
+  body.style.display = sec.classList.contains('collapsed') ? 'none' : '';
+}
+
+function toggleSubsection(id) {
+  const sub = document.getElementById(id);
+  const body = document.getElementById(id + '-body');
+  sub.classList.toggle('collapsed');
+  body.style.display = sub.classList.contains('collapsed') ? 'none' : '';
+}
+
+function showPage(id) {
+  document.querySelectorAll('.nav-page').forEach(el => el.classList.toggle('active', el.dataset.page === id));
+  document.querySelectorAll('.page-content').forEach(el => el.classList.toggle('active', el.id === 'page-' + id));
+  document.querySelector('.content-area').scrollTop = 0;
+}
+
+document.getElementById('searchInput').addEventListener('input', function() {
+  const q = this.value.toLowerCase().trim();
+  if (!q) return;
+  ['demo','jd','kr1','kr2','kr3'].forEach(id => {
+    const el = document.getElementById('page-' + id);
+    if (el && el.innerText.toLowerCase().includes(q)) showPage(id);
+  });
+});
+</script>
+</body>
+</html>
