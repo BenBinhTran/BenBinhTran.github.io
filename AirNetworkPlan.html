@@ -185,7 +185,7 @@ tr:hover td { background: #faf8ff; }
 
       <!-- Level 3: Pages -->
       <div class="nav-subsection-children" id="subsec-pnsd-body">
-        <div class="nav-page active" data-page="kr1" onclick="showPage('kr1')">
+        <div class="nav-page" data-page="kr1" onclick="showPage('kr1')">
           <span class="nav-page-dot"></span>Key Responsibilities - 1
         </div>
         <div class="nav-page-bullet">• Identify, evaluate &amp; recommend partners</div>
@@ -207,7 +207,7 @@ tr:hover td { background: #faf8ff; }
       <svg class="nav-section-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
     </div>
     <div id="sec-pdo-1-body">
-      <div class="nav-page" data-page="pdo-1" onclick="showPage('pdo-1')">
+      <div class="nav-page active" data-page="pdo-1" onclick="showPage('pdo-1')">
         <span class="nav-page-dot"></span>Probability, Distributions &amp; Optimization
       </div>
       <div class="nav-page-bullet">• Apply uncertainty, forecasting, risk, and optimization methods</div>
@@ -326,7 +326,7 @@ Requires: airline network expertise · commercial acumen · operational understa
     </div>
 
     <!-- Page: KR1 -->
-    <div class="page-content active" id="page-kr1">
+    <div class="page-content" id="page-kr1">
       <div class="breadcrumb">
         Key Responsibilities <span class="breadcrumb-sep">›</span>
         <span>Partner Network Strategy &amp; Development</span> <span class="breadcrumb-sep">›</span>
@@ -748,7 +748,7 @@ Use during: Peak season · Network disruptions · Weather events</div>
     </div>
 
     <!-- Page: PDO-1 -->
-    <div class="page-content" id="page-pdo-1">
+    <div class="page-content active" id="page-pdo-1">
       <div class="breadcrumb">
         <span>Probability, Distributions &amp; Optimization</span>
       </div>
@@ -764,6 +764,8 @@ Use during: Peak season · Network disruptions · Weather events</div>
       <div class="highlight-box">
         <strong>Why this matters:</strong> Air Network Planning is not only about finding airline partners and arranging capacity. Future volume, delays, capacity availability, weather, and customer demand are uncertain. Probability, statistical distributions, and optimization provide a disciplined basis for network decisions.
       </div>
+
+      <img src="images/EAN_PDO.jpg" alt="EAN PDO Overview" style="width:100%;border-radius:10px;border:1px solid var(--border);margin-bottom:18px;">
 
       <div class="note-block">
         <div class="note-block-header">1. Probability Theory in Air Network Planning</div>
@@ -784,6 +786,8 @@ Average demand = 50 tons/day · Available capacity = 55 tons/day
 The decision is to quantify the probability that daily demand exceeds capacity and determine whether additional capacity should be purchased.</div>
       </div>
 
+      <img src="images/EAN_PDO1.jpg" alt="EAN PDO 1" style="width:100%;border-radius:10px;border:1px solid var(--border);margin-bottom:18px;">
+
       <div class="note-block">
         <div class="note-block-header">2. Statistical Distribution Functions</div>
         <div class="note-block-body"><strong>Why distributions matter:</strong> Transit times, demand volumes, delays, and capacity utilisation vary. An average alone can hide the operational risk.
@@ -798,6 +802,8 @@ Example: SGN → HKG → MEM averages 36 hours, but the distribution may be: 20%
         <tr><td>Binomial</td><td>Success/failure outcomes and on-time performance</td><td>Estimate the probability that 18 or more of 20 flights arrive on time</td></tr>
       </table></div>
 
+      <img src="images/EAN_PDO2.jpg" alt="EAN PDO 2" style="width:50%;border-radius:10px;border:1px solid var(--border);margin-bottom:18px;">
+
       <div class="note-block">
         <div class="note-block-header">3. Forecasting Demand Using Probability</div>
         <div class="note-block-body">Network planning is fundamentally a forecasting function. The operating question is not only “What is the average demand?” but also “What demand scenarios and risk levels should the network support?”</div>
@@ -810,6 +816,8 @@ Example: SGN → HKG → MEM averages 36 hours, but the distribution may be: 20%
       </table></div>
       <div class="scenario-box">🎯 Management must decide whether to plan for average demand, protect against the worst case, or accept a defined level of risk. This is a probability-based capacity decision.</div>
 
+      <img src="images/EAN_PDO3.jpg" alt="EAN PDO 3" style="width:50%;border-radius:10px;border:1px solid var(--border);margin-bottom:18px;">
+
       <div class="note-block">
         <div class="note-block-header">4. Risk Assessment Using Probability</div>
         <div class="note-block-body">A Partner Network Engineer continuously evaluates risk across the network.</div>
@@ -820,6 +828,8 @@ Example: SGN → HKG → MEM averages 36 hours, but the distribution may be: 20%
         <tr><td>Capacity risk</td><td>P(Demand &gt; Capacity)</td><td>Trigger additional partner or seasonal capacity</td></tr>
         <tr><td>Service risk</td><td>P(Missing Delivery Commitment)</td><td>Estimate customer-experience and claims exposure</td></tr>
       </table></div>
+
+      <img src="images/EAN_PDO4.jpg" alt="EAN PDO 4" style="width:50%;border-radius:10px;border:1px solid var(--border);margin-bottom:18px;">
 
       <div class="note-block">
         <div class="note-block-header">5. Optimization in Air Network Management</div>
@@ -856,6 +866,8 @@ Example: SGN → HKG → MEM averages 36 hours, but the distribution may be: 20%
       </table></div>
       <div class="scenario-box">Score = Σ(Weight × Rating). The result is a transparent recommendation that balances cost, service, capacity, and transit time.</div>
 
+      <img src="images/EAN_PDO567.jpg" alt="EAN PDO 5-6-7" style="width:50%;border-radius:10px;border:1px solid var(--border);margin-bottom:18px;">
+
       <div class="note-block">
         <div class="note-block-header">8. Capacity Optimization</div>
         <div class="note-block-body"><strong>Question:</strong> How should 50 tons/day of available cargo volume be distributed among Cathay, EVA, and Korean Air?
@@ -867,6 +879,8 @@ Example: SGN → HKG → MEM averages 36 hours, but the distribution may be: 20%
 This is a classic Operations Research problem.</div>
       </div>
 
+      <img src="images/EAN_PDO8.jpg" alt="EAN PDO 8" style="width:50%;border-radius:10px;border:1px solid var(--border);margin-bottom:18px;">
+
       <div class="note-block">
         <div class="note-block-header">9. Route Optimization</div>
         <div class="note-block-body">The optimal route is not always the cheapest route. The best route balances service, cost, resilience, capacity, transit time, and risk exposure.</div>
@@ -877,6 +891,8 @@ This is a classic Operations Research problem.</div>
         <tr><td>SGN → ICN → MEM</td><td>Cost · Transit time · Reliability · Capacity · Risk exposure</td></tr>
         <tr><td>SGN → TPE → MEM</td><td>Cost · Transit time · Reliability · Capacity · Risk exposure</td></tr>
       </table></div>
+
+      <img src="images/EAN_PDO9.jpg" alt="EAN PDO 9" style="width:50%;border-radius:10px;border:1px solid var(--border);margin-bottom:18px;">
 
       <div class="note-block">
         <div class="note-block-header">10. Direct Link to the Job Description</div>
@@ -894,6 +910,8 @@ This is a classic Operations Research problem.</div>
         <div class="note-block-header">✅ Professional Positioning Statement</div>
         <div class="note-block-body">My engineering background includes probability theory, statistical distributions, forecasting, and optimisation. These skills are relevant to air network planning because transportation decisions must be made under uncertainty. Probability models quantify demand and service risks, distribution analysis explains network-performance variability, and optimisation techniques support partner selection, capacity planning, and routing decisions based on cost, service, transit time, and resilience.</div>
       </div>
+
+
     </div>
 
   </main>
