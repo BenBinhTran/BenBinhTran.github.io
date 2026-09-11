@@ -61,6 +61,13 @@ git credential-manager github logout BenBinhTran
 git credential-manager github list 2>&1
 git push origin main
 
+
+=============
+add 3.4 
+with details as shown in the attachment
+start with The Guideline and then Intro Nav on previous list 
+
+and finally The Flows
 =========
 git credential-manager github logout PhoenixWeaver
 git credential-manager github list 2>&1
@@ -75,7 +82,7 @@ git add .
 
 # 4. Commit your changes with a descriptive message
 #    (You can change the message inside the quotes)
-git commit -m "🏆 BenTran CV Github IO: 11092026 1300 "
+git commit -m "🏆 BenTran CV Github IO: 11092026 1400 "
 
 # 5. Push your committed changes to GitHub
 git push
