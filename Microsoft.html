@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ben Tran's Microsoft-targeted CV for customer-facing technical support, customer success, and business applications support roles in Vietnam.">
+    <meta name="author" content="Ben Tran">
+    <title>Ben Tran | Microsoft-Targeted CV</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #242424;
+            --muted: #5d5d5d;
+            --line: #d9d9d9;
+            --surface: #f5f5f5;
+            --blue: #0067b8;
+            --blue-dark: #004578;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: #ececec;
+            color: var(--ink);
+            font: 15px/1.55 "Segoe UI", Arial, sans-serif;
+        }
+
+        a { color: var(--blue-dark); }
+
+        .page {
+            max-width: 1000px;
+            margin: 32px auto;
+            padding: 52px 64px;
+            background: #fff;
+            box-shadow: 0 8px 32px rgb(0 0 0 / 12%);
+        }
+
+        header {
+            padding-bottom: 24px;
+            border-bottom: 3px solid var(--blue);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2.2rem, 6vw, 3.2rem);
+            letter-spacing: -.04em;
+            line-height: 1.1;
+        }
+
+        .headline {
+            margin: 10px 0 14px;
+            color: var(--blue-dark);
+            font-size: 1.18rem;
+            font-weight: 650;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px 18px;
+            color: var(--muted);
+        }
+
+        .contact a { text-decoration: none; }
+        .contact a:hover { text-decoration: underline; }
+
+        .target {
+            margin-top: 18px;
+            padding: 13px 16px;
+            border-left: 4px solid var(--blue);
+            background: #f1f7fc;
+        }
+
+        .target strong { color: var(--blue-dark); }
+
+        section { margin-top: 28px; }
+
+        h2 {
+            margin: 0 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--line);
+            color: var(--blue-dark);
+            font-size: 1.15rem;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        p { margin: 0 0 10px; }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px 24px;
+        }
+
+        .skill-group { margin: 0; }
+        .skill-group strong { display: block; }
+
+        .role, .project, .education-item { margin: 0 0 18px; }
+
+        .role-heading, .project-heading, .education-heading {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: baseline;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .date, .location {
+            color: var(--muted);
+            white-space: nowrap;
+            font-size: .9rem;
+        }
+
+        .subtitle {
+            margin: 2px 0 5px;
+            color: var(--muted);
+        }
+
+        ul {
+            margin: 7px 0 0;
+            padding-left: 20px;
+        }
+
+        li { margin: 3px 0; }
+
+        .project a { overflow-wrap: anywhere; }
+
+        .note {
+            margin-top: 18px;
+            padding: 12px 14px;
+            background: var(--surface);
+            color: var(--muted);
+            font-size: .9rem;
+        }
+
+        footer {
+            margin-top: 26px;
+            padding-top: 12px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: .85rem;
+        }
+
+        @media (max-width: 650px) {
+            .page { margin: 0; padding: 30px 22px; }
+            .skills { grid-template-columns: 1fr; }
+            .role-heading, .project-heading, .education-heading {
+                display: block;
+            }
+            .date, .location { display: block; white-space: normal; }
+        }
+
+        @media print {
+            @page { size: A4; margin: 14mm; }
+            body { background: #fff; font-size: 10pt; }
+            .page {
+                max-width: none;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+            a { color: inherit; text-decoration: none; }
+            section { break-inside: avoid; margin-top: 18px; }
+            .role, .project, .education-item { break-inside: avoid; }
+            .target, .note { background: #f5f5f5 !important; }
+        }
+    </style>
+</head>
+<body>
+<main class="page">
+    <header>
+        <h1>BEN BÌNH TRẦN</h1>
+        <p class="headline">Customer-Facing Technical Support | Customer Success | Workflow Automation</p>
+        <div class="contact" aria-label="Contact information">
+            <span>Ho Chi Minh City, Vietnam</span>
+            <a href="mailto:TranBinhBen@gmail.com">TranBinhBen@gmail.com</a>
+            <a href="tel:+84822468722">+84 822 468 722</a>
+            <a href="https://BenBinhTran.github.io">Portfolio</a>
+            <a href="https://github.com/PhoenixWeaver">GitHub</a>
+        </div>
+        <div class="target">
+            <strong>Target roles in Vietnam:</strong> Technical Support Engineer; Customer Success / Support Services; Business Applications or Power Platform Support.
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>
+            Bilingual customer-facing technical and operations professional with experience supporting B2B customers,
+            triaging service and platform issues, documenting incidents, coordinating escalations, and improving
+            workflows. At FedEx Vietnam, manage shipment-related cases across CEBS, ServiceNow, SharePoint, and Excel;
+            use Power Query and Power Automate to improve tracking and notifications. Earlier experience includes
+            ServiceNow-based support, quality investigations, and university research in electrical engineering.
+            Brings an engineering education, clear English/Vietnamese communication, and a practical, customer-focused
+            approach to troubleshooting and service improvement.
+        </p>
+    </section>
+
+    <section>
+        <h2>Role Alignment</h2>
+        <div class="skills">
+            <p class="skill-group"><strong>Technical Support Engineer</strong>Case ownership, issue triage, incident records, customer updates, escalation coordination, and service recovery.</p>
+            <p class="skill-group"><strong>Customer Success / Support Services</strong>B2B customer communication, expectation-setting, cross-functional follow-through, process guidance, and service quality.</p>
+            <p class="skill-group"><strong>Business Applications / Power Platform Support</strong>Microsoft 365 workflows, SharePoint list processing, Power Automate flows, Excel reporting, and lightweight internal tools.</p>
+            <p class="skill-group"><strong>Additional technical foundation</strong>Electrical engineering research, statistical process control, root-cause analysis, and technical documentation.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills &amp; Tools</h2>
+        <div class="skills">
+            <p class="skill-group"><strong>Customer &amp; service operations</strong>B2B support, case lifecycle management, incident triage, SLA monitoring, escalations, service recovery, bilingual communication.</p>
+            <p class="skill-group"><strong>Service &amp; productivity platforms</strong>ServiceNow, SharePoint, Microsoft 365, Excel, Power Query, CEBS.</p>
+            <p class="skill-group"><strong>Automation &amp; data</strong>Power Automate, SQL (PostgreSQL), Power BI (basic), JavaScript, HTML/CSS, Node.js, REST APIs.</p>
+            <p class="skill-group"><strong>Engineering methods</strong>Root-cause analysis, statistical process control (SPC), test data analysis, SOPs, quality documentation.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        <article class="role">
+            <div class="role-heading">
+                <h3>Customer Experience Agent — RPI / Remote Pickup</h3>
+                <span class="date">Feb 2026 – Sep 2026</span>
+            </div>
+            <p class="subtitle">FedEx Vietnam | Ho Chi Minh City, Vietnam</p>
+            <ul>
+                <li>Manage shipment pickup cases from intake through closure across CEBS, ServiceNow, SharePoint, and Excel, maintaining clear statuses, timestamps, ownership, and handoff notes.</li>
+                <li>Validate shipment and supporting-document details, identify missing information, and coordinate with customers and operational teams to resolve service issues.</li>
+                <li>Monitor case queues and pickup SLAs, flag risks, and escalate with relevant case context and recommended recovery actions.</li>
+                <li>Communicate service expectations and updates in English and Vietnamese using clear, consistent templates.</li>
+                <li>Use Excel and Power Query to track case aging, pickup-within-SLA performance, and recurring exception types.</li>
+                <li>Built Power Automate flows to normalize SharePoint data, group shipment records by recipient, and send consolidated HTML notifications.</li>
+            </ul>
+        </article>
+
+        <article class="role">
+            <div class="role-heading">
+                <h3>Customer Service Partner Specialist</h3>
+                <span class="date">2024 – 2025</span>
+            </div>
+            <p class="subtitle">Concentrix | Ho Chi Minh City, Vietnam</p>
+            <ul>
+                <li>Supported B2B accounts and platforms; triaged reported technical issues and coordinated defect escalations to engineering teams.</li>
+                <li>Handled billing and dispute inquiries with relevant partners and maintained customer-focused follow-through.</li>
+                <li>Recorded incidents and root-cause categories in ServiceNow to support audit readiness and process improvement.</li>
+            </ul>
+        </article>
+
+        <article class="role">
+            <div class="role-heading">
+                <h3>Quality Control &amp; Assurance Specialist</h3>
+                <span class="date">2022 – 2023</span>
+            </div>
+            <p class="subtitle">Kizik | USA</p>
+            <ul>
+                <li>Analyzed test data using statistical process control and investigated failures related to design and material changes.</li>
+                <li>Assisted with test-fixture development and production monitoring.</li>
+            </ul>
+        </article>
+
+        <article class="role">
+            <div class="role-heading">
+                <h3>Warehouse Operations — Pick &amp; Pack</h3>
+                <span class="date">2022 – 2023</span>
+            </div>
+            <p class="subtitle">Black Diamond | USA</p>
+            <ul>
+                <li>Fulfilled high-volume orders while maintaining inventory accuracy and completing outbound visual quality checks.</li>
+            </ul>
+        </article>
+
+        <article class="role">
+            <div class="role-heading">
+                <h3>Shift Lead / Sales Manager</h3>
+                <span class="date">2018 – 2020</span>
+            </div>
+            <p class="subtitle">AutoZone Inc. | USA</p>
+            <ul>
+                <li>Led daily store operations and a team of 6+; coordinated commercial order fulfillment, inventory, financial processes, and safety.</li>
+            </ul>
+        </article>
+
+        <article class="role">
+            <div class="role-heading">
+                <h3>Research Assistant — Electrical &amp; Computer Engineering</h3>
+                <span class="date">2010 – 2014</span>
+            </div>
+            <p class="subtitle">Brigham Young University / Linear Signal Inc. | Provo, Utah</p>
+            <ul>
+                <li>Designed, simulated, and fabricated a dielectric resonator antenna array for SATCOM, achieving a 10% aperture-efficiency improvement.</li>
+                <li>Developed and validated a model for characterizing radome materials at high temperatures.</li>
+            </ul>
+        </article>
+
+        <article class="role">
+            <div class="role-heading">
+                <h3>Research Assistant — MOLICS Lab</h3>
+                <span class="date">2005 – 2010</span>
+            </div>
+            <p class="subtitle">University of Arkansas | Fayetteville, Arkansas</p>
+            <ul>
+                <li>Applied microwave imaging to non-contact object detection and fabricated/tested RF devices under laboratory protocols.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>Selected Technical Projects</h2>
+        <article class="project">
+            <div class="project-heading">
+                <h3>AWB Consolidation Flow — Power Automate</h3>
+                <span class="date">2026</span>
+            </div>
+            <p>Processes SharePoint shipment rows, normalizes recipient fields, groups records, and sends consolidated HTML email notifications.</p>
+        </article>
+        <article class="project">
+            <div class="project-heading">
+                <h3>Case Library &amp; Templates Organizer</h3>
+                <span class="date">2026</span>
+            </div>
+            <p>Bilingual customer-service and logistics tool for searching and organizing email templates and internal notes.</p>
+            <p><a href="https://phoenixflix.vercel.app/caselibrary.html">View project demo</a></p>
+        </article>
+        <article class="project">
+            <div class="project-heading">
+                <h3>Logistics Workflow &amp; Order Automation Prototypes</h3>
+                <span class="date">2026</span>
+            </div>
+            <p>Browser-based tools for booking checks, driver notes, and supplies-order handling, designed to standardize routine workflows and improve traceability.</p>
+            <p><a href="https://phoenixflix.vercel.app/bulkbooking.html">Bulk booking demo</a> · <a href="https://phoenixflix.vercel.app/orders.html">Order automation demo</a></p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Education &amp; Credentials</h2>
+        <div class="education-item">
+            <div class="education-heading">
+                <h3>PhD studies, Electrical &amp; Computer Engineering</h3>
+                <span class="date">2010 – 2014</span>
+            </div>
+            <p class="subtitle">Brigham Young University</p>
+        </div>
+        <div class="education-item">
+            <div class="education-heading">
+                <h3>MS, Electrical Engineering</h3>
+                <span class="date">2008 – 2010</span>
+            </div>
+            <p class="subtitle">University of Arkansas</p>
+        </div>
+        <div class="education-item">
+            <div class="education-heading">
+                <h3>BS, Electrical Engineering &amp; Mathematics</h3>
+                <span class="date">2004 – 2008</span>
+            </div>
+            <p class="subtitle">University of Arkansas</p>
+        </div>
+        <p><strong>Relevant ServiceNow learning:</strong> Customer Service Case Management, Incident Management, Problem Management, Administration Fundamentals, Knowledge Management, JavaScript Fundamentals.</p>
+        <p><strong>Selected publications:</strong> IEEE Transactions on Antennas and Propagation (2014); IEEE APS-URSI (2013).</p>
+    </section>
+
+    <p class="note">
+        This is a role-targeted CV, not a claim of Microsoft employment or Microsoft certification. Match each application to the job description; cloud-focused support roles may require Azure or other product-specific experience not represented here.
+    </p>
+    <footer>References and additional project details are available upon request.</footer>
+</main>
+</body>
+</html>
