@@ -298,6 +298,30 @@
       margin-bottom: 0;
     }
 
+    .activities {
+      margin-top: 10px;
+    }
+
+    .activities-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 18px;
+      margin: 0;
+      list-style: none;
+    }
+
+    .activities-list li {
+      position: relative;
+      padding-left: 10px;
+    }
+
+    .activities-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--cv-heading);
+    }
+
     .role-alignment-intro {
       margin: 0 0 7px;
       color: var(--cv-muted);
@@ -345,8 +369,8 @@
       body {
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
-        font-size: 9px;
-        line-height: 1.15;
+        font-size: 8.6px;
+        line-height: 1.1;
       }
 
       .no-print {
@@ -404,18 +428,18 @@
 
       section,
       .summary {
-        margin-top: 4px;
+        margin-top: 3px;
       }
 
       h2 {
-        padding-bottom: 2px;
-        margin: 4px 0 3px;
+        padding-bottom: 1px;
+        margin: 2px 0 2px;
         border-bottom: 1px solid #dbe5f0;
         font-size: 10px;
       }
 
       p {
-        margin: 2px 0;
+        margin: 1px 0;
       }
 
       .muted {
@@ -423,12 +447,12 @@
       }
 
       ul {
-        margin: 2px 0 2px 12px;
+        margin: 1px 0 1px 12px;
       }
 
       li {
         margin: 1px 0;
-        line-height: 1.12;
+        line-height: 1.08;
       }
 
       .two-col {
@@ -442,7 +466,7 @@
       }
 
       .role-block {
-        margin-bottom: 3px;
+        margin-bottom: 2px;
       }
 
       .role {
@@ -484,15 +508,15 @@
       }
 
       .highlights {
-        margin-top: 8px;
+        margin-top: 5px;
       }
 
       .highlights-grid {
-        gap: 8px;
+        gap: 6px;
       }
 
       .highlight {
-        padding: 6px;
+        padding: 5px;
       }
 
       .highlight h3 {
@@ -502,7 +526,7 @@
 
       .highlight p {
         font-size: 8.2px;
-        line-height: 1.18;
+        line-height: 1.12;
       }
 
       .projects {
@@ -510,7 +534,7 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
         column-gap: 12px;
         row-gap: 2px;
-        margin-top: 8px;
+        margin-top: 5px;
       }
 
       .projects > h2,
@@ -520,15 +544,40 @@
       }
 
       .project-block {
-        margin-bottom: 3px;
+        margin-bottom: 1px;
       }
 
       .project-block ul {
-        margin-top: 2px;
+        margin-top: 1px;
       }
 
       .project-links {
         font-size: 8.2px;
+      }
+
+      .activities {
+        margin-top: 1px;
+        padding-top: 2px;
+        border-top: 1px solid #dbe5f0;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .activities h2 {
+        padding-bottom: 1px;
+        margin: 1px 0;
+        font-size: 9.5px;
+      }
+
+      .activities-list {
+        gap: 0 10px;
+        font-size: 7.8px;
+        line-height: 1.05;
+      }
+
+      .activities-list li {
+        margin: 0;
+        line-height: 1.05;
       }
 
       .publication-block {
@@ -578,7 +627,7 @@
     <section class="summary" aria-labelledby="summary-heading">
       <h2 id="summary-heading">Summary &amp; Objective</h2>
       <p class="muted">
-        Operations-focused engineering professional with 20+ years of technical, research, and operations experience, including FedEx Vietnam work supporting RPI creation and monitoring. Strong foundation for Engineer – Air Network &amp; Partner Management through exception monitoring, SLA/KPI analysis, service-recovery coordination, process implementation, and cross-functional handoffs across station, PUD, inbound-clearance, and regional teams — including Malaysia, Singapore, China, Taiwan, and Thailand. Supported by U.S. engineering education, practical analytics and automation experience, and bilingual English/Vietnamese communication.
+        Ph.D.-level Electrical and Computer Engineer who lived, studied, and worked in the United States for 20 years across academic research, manufacturing, retail, and logistics service operations. Brings a strong foundation for Air Network &amp; Partner Management through exception monitoring, SLA/KPI analysis, service-recovery coordination, process implementation, and cross-functional handoffs across station, PUD, inbound-clearance, and regional teams. Experienced with Excel/Power Query, Power BI, SQL, CEBS, ServiceNow, SharePoint, Power Automate, and JavaScript. Bilingual English/Vietnamese.
       </p>
     </section>
 
@@ -784,6 +833,16 @@
           <li><strong>Broadband high-efficiency DRA for satellite communications.</strong> <em>IEEE APS-URSI</em>, 2013.</li>
         </ul>
       </section>
+    </section>
+
+    <section class="activities" aria-labelledby="activities-heading">
+      <h2 id="activities-heading">Activities &amp; Leadership</h2>
+      <ul class="activities-list">
+        <li>Presenter/Mentor, International Culture Team (2005–2010)</li>
+        <li>Coordinator, Cross Culture Mentor (2007–2010)</li>
+        <li>Outreach Committee Chair, NWA American Red Cross (2009)</li>
+        <li>Student Council Member, BYU Graduate Student Society (2010)</li>
+      </ul>
     </section>
 
   </main>
