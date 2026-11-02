@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ben Tran — AI Solutions & Project Executive CV focused on AI-assisted productivity, workflow automation, project coordination, and customer success.">
+  <title>Ben Tran — AI Solutions &amp; Project Executive CV</title>
+
+  <style>
+    :root {
+      --cv-text: #111111;
+      --cv-muted: #555555;
+      --cv-heading: #0a58a8;
+      --cv-border: #dddddd;
+      --cv-chip-bg: #f2f6fb;
+      --cv-chip-text: #111133;
+      --cv-font-body: Arial, Helvetica, sans-serif;
+      --cv-line-height: 1.45;
+      --cv-container-width: 794px;
+      --cv-container-padding: 18px;
+      --cv-column-gap: 18px;
+      --cv-sidebar-width: 230px;
+      --cv-section-spacing: 10px;
+      --cv-body-size: 11px;
+      --cv-sidebar-size: 9.5px;
+      --cv-meta-size: 9.5px;
+      --cv-role-size: 11.5px;
+      --cv-heading-size: 13px;
+    }
+
+    * { box-sizing: border-box; }
+
+    @page {
+      size: A4;
+      margin: 9mm 10mm;
+    }
+
+    body {
+      margin: 0;
+      color: var(--cv-text);
+      background: #ffffff;
+      font-family: var(--cv-font-body);
+      font-size: var(--cv-body-size);
+      line-height: var(--cv-line-height);
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--cv-container-width);
+      margin: 12px auto;
+      padding: var(--cv-container-padding);
+    }
+
+    .document-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--cv-column-gap);
+      padding-bottom: 9px;
+      border-bottom: 1px solid var(--cv-border);
+    }
+
+    .identity { min-width: 0; }
+    .name { margin: 0; font-size: 20px; font-weight: 700; }
+    .title { margin-top: 4px; color: var(--cv-muted); font-size: 13px; font-weight: 600; }
+    .tagline { margin-top: 2px; color: var(--cv-muted); font-size: var(--cv-meta-size); }
+
+    .contact {
+      flex: 0 0 255px;
+      color: var(--cv-muted);
+      font-size: var(--cv-meta-size);
+      font-style: normal;
+      line-height: 1.4;
+      text-align: right;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 10px;
+      text-align: right;
+    }
+
+    .contact-grid span { display: block; white-space: nowrap; }
+    a { color: #0a66c2; text-decoration: none; }
+    a:hover, a:focus-visible { text-decoration: underline; }
+    .summary { margin-top: var(--cv-section-spacing); }
+    section { margin-top: var(--cv-section-spacing); }
+
+    h2 {
+      margin: 5px 0;
+      color: var(--cv-heading);
+      font-size: var(--cv-heading-size);
+      line-height: 1.25;
+    }
+
+    p { margin: 5px 0; }
+    .muted { color: var(--cv-muted); font-size: var(--cv-meta-size); }
+    .small { font-size: var(--cv-sidebar-size); }
+    ul { margin: 5px 0; padding-left: 17px; }
+    li { margin: 3px 0; line-height: 1.25; }
+
+    .two-col {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--cv-column-gap);
+      margin-top: 2px;
+    }
+
+    .col-main { min-width: 0; flex: 1 1 auto; }
+    .col-side { width: var(--cv-sidebar-width); flex: 0 0 var(--cv-sidebar-width); }
+
+    .role-block, .sidebar-block, .project-block, .highlight {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .role-block { margin-bottom: 7px; }
+    .role { color: var(--cv-text); font-size: var(--cv-role-size); font-weight: 700; line-height: 1.25; }
+    .meta { margin: 2px 0 4px; color: var(--cv-muted); font-size: var(--cv-meta-size); line-height: 1.3; }
+    .role-block ul { margin-top: 3px; }
+    .sidebar-block { margin-bottom: 9px; }
+    .sidebar-block h2 { margin-top: 0; }
+    .sidebar-list { margin-left: 14px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 4px; }
+
+    .skill {
+      padding: 2px 5px;
+      border: 1px solid #d9e2ee;
+      border-radius: 3px;
+      color: var(--cv-chip-text);
+      background: var(--cv-chip-bg);
+      font-size: var(--cv-sidebar-size);
+      line-height: 1.2;
+    }
+
+    .side-copy { color: var(--cv-muted); font-size: var(--cv-sidebar-size); line-height: 1.35; }
+    .highlights { margin-top: 9px; }
+    .highlights-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+
+    .highlight {
+      padding: 7px;
+      border: 1px solid var(--cv-border);
+      border-radius: 4px;
+      background: #fbfdff;
+    }
+
+    .highlight h3 { margin: 0 0 3px; color: var(--cv-heading); font-size: 10.5px; line-height: 1.2; }
+    .highlight p { margin: 0; color: var(--cv-muted); font-size: var(--cv-meta-size); line-height: 1.25; }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 14px;
+      row-gap: 3px;
+      margin-top: 9px;
+    }
+
+    .projects > h2 { grid-column: 1 / -1; }
+    .project-block { margin-bottom: 3px; }
+    .project-block ul { margin-top: 3px; }
+    .project-links { font-size: var(--cv-meta-size); }
+    .project-links a { color: #0a66c2; font-style: italic; }
+    .no-print { margin-bottom: 10px; color: var(--cv-muted); font-size: 11px; text-align: center; }
+
+    @media screen and (max-width: 760px) {
+      .container { margin: 0 auto; padding: 16px; }
+      .document-header, .two-col { flex-direction: column; }
+      .contact { flex-basis: auto; width: 100%; text-align: left; }
+      .contact-grid { text-align: left; }
+      .col-side { width: 100%; flex-basis: auto; }
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        font-size: 10px;
+        line-height: 1.17;
+      }
+
+      .no-print { display: none; }
+      .container { max-width: none; margin: 0; padding: 0; }
+      a { color: var(--cv-text); }
+      .document-header { gap: 12px; padding-bottom: 5px; break-inside: avoid; }
+      .name { font-size: 16px; }
+      .title { margin-top: 1px; font-size: 9.5px; }
+      .tagline { margin-top: 1px; font-size: 7.8px; }
+      .contact { flex-basis: 285px; font-size: 7.5px; line-height: 1.12; }
+      .contact-grid { gap: 0 7px; }
+      section, .summary { margin-top: 4.5px; }
+      h2 { padding-bottom: 1px; margin: 3.5px 0; border-bottom: 1px solid #dbe5f0; font-size: 10.8px; }
+      p { margin: 2px 0; }
+      .muted { font-size: 9.8px; }
+      ul { margin: 2px 0 2px 11px; padding-left: 0; }
+      li { margin: 1.8px 0; line-height: 1.14; }
+      .two-col { gap: 9px; }
+      .col-side { width: 150px; flex-basis: 150px; }
+      .role-block { margin-bottom: 3.5px; }
+      .role { font-size: 10.3px; line-height: 1.17; }
+      .meta { margin: 1px 0 2px; font-size: 9.2px; line-height: 1.16; }
+      .role-block ul { margin-top: 2px; }
+      .sidebar-block { margin-bottom: 6px; }
+      .sidebar-list { margin-left: 9px; }
+      .skills { gap: 2px; }
+      .skill { padding: 1.5px 3px; font-size: 8.5px; line-height: 1.12; }
+      .side-copy { font-size: 9px; line-height: 1.2; }
+      .highlights { margin-top: 6px; }
+      .highlights-grid { gap: 6px; }
+      .highlight { padding: 5px; }
+      .highlight h3 { margin-bottom: 2px; font-size: 9.2px; }
+      .highlight p { font-size: 8.8px; line-height: 1.15; }
+      .projects { column-gap: 10px; row-gap: 2px; margin-top: 6px; }
+      .project-block { margin-bottom: 2px; }
+      .project-block ul { margin-top: 2px; }
+      .project-links { font-size: 8.8px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="no-print">Print with A4 paper size and default scale, then choose “Save as PDF”. The print layout is designed for one page.</div>
+
+  <main class="container">
+    <header class="document-header">
+      <div class="identity">
+        <h1 class="name">BEN BINH TRAN</h1>
+        <div class="title">AI Solutions &amp; Project Executive</div>
+        <div class="tagline">AI-Assisted Productivity | Workflow Automation | Project Coordination | Customer Success</div>
+      </div>
+
+      <address class="contact">
+        <div class="contact-grid">
+          <span>+84 822 468 722</span>
+          <span>Ho Chi Minh City, Vietnam</span>
+          <span><a href="mailto:BenBinhTran@gmail.com">BenBinhTran@gmail.com</a></span>
+          <span><a href="https://BenBinhTran.github.io" target="_blank" rel="noopener noreferrer">BenBinhTran.github.io</a></span>
+          <span><a href="https://phoenixflix.vercel.app" target="_blank" rel="noopener noreferrer">phoenixflix.vercel.app</a></span>
+          <span><a href="https://github.com/PhoenixWeaver" target="_blank" rel="noopener noreferrer">github.com/PhoenixWeaver</a></span>
+        </div>
+      </address>
+    </header>
+
+ <section class="summary" aria-labelledby="summary-heading">
+  <h2 id="summary-heading">Professional Profile</h2>
+  <p class="muted">
+    Electrical and Computer Engineer with an M.S. and doctoral studies in ECE, combining customer operations experience with hands-on automation and software projects. Turns operational needs into practical workflows and decision-support tools, including Power Automate case routing, logistics validation tools, and project-analysis software. Experienced in B2B support, SLA tracking, cross-functional coordination, and Copilot/OCR-assisted document checks. Bilingual English/Vietnamese, with a 20-year U.S. academic and professional background.
+    Virtual CV: <a href="https://BenBinhTran.github.io/ASPE" target="_blank" rel="noopener noreferrer">https://BenBinhTran.github.io/ASPE</a>
+  </p>
+</section>
+
+    <div class="two-col">
+      <section class="col-main" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Professional Experience</h2>
+
+        <article class="role-block">
+          <div class="role">FedEx Vietnam — Customer Experience Agent (RPI Creator &amp; Monitor)</div>
+          <div class="meta">Ho Chi Minh City, Vietnam | 02/2026–08/2026</div>
+          <ul>
+            <li>Create RPI C-MOD records in CEBS and SharePoint for bilingual consignee notifications; validate 12-digit AWBs and use Copilot/OCR-assisted extraction to check contacts and RPI, commercial, and safety documents.</li>
+            <li>Own case tracking across CEBS, SharePoint, Excel, and ServiceNow; maintain statuses, timestamps, owners, and handoffs through pickup and closure.</li>
+            <li>Monitor queues and pickup-within-SLA performance; escalate risks through Station Supervisor → Operations Manager → Regional RPI, coordinating with station, pickup-and-delivery, clearance, and China/Taiwan/Thailand teams.</li>
+            <li>Built a Power Automate flow to normalize multi-recipient SharePoint data, group AWBs by recipient, and send consolidated HTML notifications; use Excel/Power Query to track case aging and exceptions.</li>
+          </ul>
+        </article>
+
+        <article class="role-block">
+          <div class="role">FedEx Vietnam — Customer Experience Agent / Supplies Coordination</div>
+          <div class="meta">Ho Chi Minh City, Vietnam | 02/2026–05/2026</div>
+          <ul>
+            <li>Coordinated supply orders with Malaysia and Singapore teams; standardized order tracking and escalation procedures and followed up on missing or delayed requests.</li>
+          </ul>
+        </article>
+
+        <article class="role-block">
+          <div class="role">Customer Service Partner Specialist — Concentrix</div>
+          <div class="meta">Ho Chi Minh City, Vietnam | 2024–2025</div>
+          <ul>
+            <li>Provided B2B technical triage and customer support; documented platform incidents in ServiceNow and coordinated defect escalations with engineering.</li>
+          </ul>
+        </article>
+
+        <article class="role-block">
+          <div class="role">Quality Control &amp; Warehouse Operations — Kizik / Black Diamond</div>
+          <div class="meta">USA | 2022–2023</div>
+          <ul>
+            <li>Analyzed product test data, supported design and manufacturing investigations, maintained quality records, and performed inventory and outbound quality checks.</li>
+          </ul>
+        </article>
+
+        <article class="role-block">
+          <div class="role">Shift Lead / Sales Manager — AutoZone Inc.</div>
+          <div class="meta">USA | 2018–2020</div>
+          <ul>
+            <li>Led assigned store shifts and a team of 6+; managed commercial account fulfillment, delivery handoffs, inventory, and service expectations.</li>
+          </ul>
+        </article>
+
+        <article class="role-block">
+          <div class="role">Research Assistant (SATCOM) — BYU / Linear Signal Inc.</div>
+          <div class="meta">Utah, USA | 2010–2014</div>
+          <ul>
+            <li>Designed and tested satellite-communications antenna arrays; a dielectric resonator array achieved a reported 10% aperture-efficiency improvement.</li>
+          </ul>
+        </article>
+
+        <article class="role-block">
+          <div class="role">Research Assistant — University of Arkansas (MOLICS Lab)</div>
+          <div class="meta">Arkansas, USA | 2005–2010</div>
+          <ul>
+            <li>Applied microwave imaging to non-contact object detection and fabricated and tested RF devices under laboratory protocols.</li>
+          </ul>
+        </article>
+
+        <section class="sidebar-block" aria-labelledby="agent-project-heading">
+          <h2 id="agent-project-heading">AI Agent Project</h2>
+          <article class="project-block">
+            <div class="role">AI Contoso Agent Helper — Microsoft Copilot Studio</div>
+            <div class="meta">Private build; not publicly released | Copilot Studio, Dataverse, Power Automate, Outlook</div>
+            <ul>
+              <li>Designed a root agent to identify intent, collect caller name, machine model, and order number, then route requests to machine-order or product-support subagents.</li>
+              <li>Connected Dataverse order records and an agent flow for knowledge-grounded product answers, order-status checks, and order-cancellation requests.</li>
+              <li>Configured and tested an Outlook-triggered flow to extract order IDs, retrieve status/details, and reply to the original customer email with personalized information.</li>
+              <li class="project-links"><a href="https://github.com/PhoenixWeaver/BT-utility-tools-demo/blob/main/README_AutoCS_Agent.md" target="_blank" rel="noopener noreferrer">Project overview</a></li>
+            </ul>
+          </article>
+        </section>
+      </section>
+
+      <aside class="col-side" aria-label="Competencies, skills, and education">
+        <section class="sidebar-block" aria-labelledby="competencies-heading">
+          <h2 id="competencies-heading">Core Competencies</h2>
+          <ul class="sidebar-list small">
+            <li>Workflow discovery and solution design</li>
+            <li>Project coordination and delivery follow-through</li>
+            <li>B2B customer success and issue resolution</li>
+            <li>Cross-functional and international coordination</li>
+            <li>SLA/KPI monitoring, risk escalation, and improvement</li>
+          </ul>
+        </section>
+
+        <section class="sidebar-block" aria-labelledby="tools-heading">
+          <h2 id="tools-heading">Tools &amp; Technologies</h2>
+          <div class="skills small">
+            <span class="skill">Copilot / Copilot Studio</span>
+            <span class="skill">AI Builder / OCR</span>
+            <span class="skill">Power Automate / Apps</span>
+            <span class="skill">Microsoft 365</span>
+            <span class="skill">SharePoint / Lists</span>
+            <span class="skill">ServiceNow</span>
+            <span class="skill">Excel / Power Query</span>
+            <span class="skill">Power BI</span>
+            <span class="skill">SQL / PostgreSQL</span>
+            <span class="skill">Go</span>
+            <span class="skill">JavaScript / Node.js</span>
+            <span class="skill">HTML / CSS</span>
+          </div>
+        </section>
+
+        <section class="sidebar-block" aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <p class="side-copy">
+            <strong>PhD studies (incomplete), ECE</strong><br>
+            Brigham Young University | 2010–2014
+          </p>
+          <p class="side-copy">
+            <strong>MS, Electrical Engineering</strong> — University of Arkansas | 2008–2010<br>
+            <strong>BS, Electrical Engineering &amp; Mathematics</strong> — University of Arkansas | 2004–2008
+          </p>
+        </section>
+
+        <section class="sidebar-block" aria-labelledby="credentials-heading">
+          <h2 id="credentials-heading">AI &amp; Automation Credentials</h2>
+          <p class="side-copy">
+            <strong>Microsoft Automate Agent in a Day</strong> — Power Automate and AI-agent workflow training.
+            <a href="../Certificates/Automate%20in%20a%20Day%20certificate%20for%20Ben%20Tran.pdf">Certificate</a><br>
+            Microsoft Learn: Copilot Studio agents, autonomous triggers, and AI Builder.
+            <a href="https://learn.microsoft.com/en-gb/users/bentran/achievements" target="_blank" rel="noopener noreferrer">Badges</a>
+          </p>
+        </section>
+
+        <section class="sidebar-block" aria-labelledby="additional-heading">
+          <h2 id="additional-heading">Additional</h2>
+          <p class="side-copy"><strong>Languages:</strong> English (professional); Vietnamese (native). <strong>ServiceNow:</strong> Customer Service, Incident/Problem, Knowledge, Administration, JavaScript badges.</p>
+        </section>
+      </aside>
+    </div>
+
+    <section class="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected Projects &amp; Work Samples</h2>
+
+      <article class="project-block">
+        <div class="role">Customer Experience Request Management Platform</div>
+        <div class="meta">Power Automate, Power Apps, Microsoft Lists, SharePoint, Outlook</div>
+        <ul>
+          <li>Designed Forms-to-closure workflows with Switch/Condition routing by request type and language; Lists track owner, status, follow-up, and SLA.</li>
+          <li>Added bilingual shared-mailbox notifications and a flow that normalizes recipients and consolidates AWBs into one email per consignee.</li>
+          <li class="project-links"><a href="https://github.com/PhoenixWeaver/BT-utility-tools-demo/blob/main/README_AutomateFlows.md" target="_blank" rel="noopener noreferrer">Project overview</a></li>
+        </ul>
+      </article>
+
+      <article class="project-block">
+        <div class="role">Unified Logistics Booking &amp; Shipment Tools</div>
+        <div class="meta">JavaScript, HTML/CSS, Regex, unit conversion</div>
+        <ul>
+          <li>Parses CED/eOPS shipment data, converts units, and checks service, weight, dimension, and length-and-girth limits.</li>
+          <li>Generates editable booking emails and driver notes; validates bulk-credit requests against the 300 kg threshold and whitelist confirmation.</li>
+          <li class="project-links"><a href="https://phoenixflix.vercel.app/bulkbooking.html" target="_blank" rel="noopener noreferrer">Live demo</a> | <a href="https://github.com/PhoenixWeaver/BT-utility-tools-demo/blob/main/README_bulkbooking.md" target="_blank" rel="noopener noreferrer">Project overview</a></li>
+        </ul>
+      </article>
+
+      <article class="project-block">
+        <div class="role">BT Project Builder &amp; Evaluator</div>
+        <div class="meta">Go, PlantUML, SchemaSpy, AI-assisted project guides</div>
+        <ul>
+          <li>Created project-scanning tools for architecture diagrams, dependency analysis, progress reports, and structured quality assessment; one snapshot covered 367+ functions across 28 files, with AI Advisor project-recreation and function-order guides.</li>
+          <li class="project-links"><a href="https://github.com/PhoenixWeaver" target="_blank" rel="noopener noreferrer">GitHub portfolio</a></li>
+        </ul>
+      </article>
+
+      <article class="project-block">
+        <div class="role">Order Automation &amp; Case Library</div>
+        <div class="meta">Web application prototypes | Node/Express, JavaScript</div>
+        <ul>
+          <li>Order prototype parses requests, applies proportional category/item limits, prevents duplicate pending orders, and logs modified/VIP overrides with reasons.</li>
+          <li>Case Library provides searchable bilingual templates with category filters, copy tools, editing, and local persistence.</li>
+          <li class="project-links"><a href="https://phoenixflix.vercel.app/orders.html" target="_blank" rel="noopener noreferrer">Order demo</a> | <a href="https://phoenixflix.vercel.app/caselibrary.html" target="_blank" rel="noopener noreferrer">Case Library demo</a></li>
+        </ul>
+      </article>
+
+      <h2 class="full-span">Publications &amp; Leadership</h2>
+
+      <article class="project-block">
+        <div class="role">Selected Publications</div>
+        <ul>
+          <li>“High Efficiency Dielectric Resonator Antenna Array Feeds for Satellite Communications,” <em>IEEE Transactions on Antennas &amp; Propagation</em>, 2014.</li>
+          <li>“Broadband, High Efficiency Dielectric Resonator Antenna for Satellite Communications,” <em>IEEE APS-URSI</em>, 2013.</li>
+        </ul>
+      </article>
+
+      <article class="project-block">
+        <div class="role">Activities &amp; Leadership</div>
+        <ul>
+          <li>Presenter/Mentor, International Culture Team (2005–2010); Coordinator, Cross Culture Mentor (2007–2010).</li>
+          <li>Outreach Committee Chair, NWA American Red Cross (2009); Student Council, BYU Graduate Student Society (2010).</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
