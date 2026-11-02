@@ -86,3 +86,24 @@ git commit -m "🏆 BenTran CV Github IO:  $(date +%d%m%y) $(date +%H%M) ✨"
 
 # 5. Push your committed changes to GitHub
 git push
+
+===============
+git credential-manager github logout PhoenixWeaver
+git credential-manager github list 2>&1
+git push origin main
+
+git remote set-url origin https://github.com/BenBinhTran/BenBinhTran.github.io.git
+# 2. Check the status of your files to see what has changed
+git status
+
+git checkout -b feature/v2
+
+git checkout main
+git pull origin main
+git add .
+git commit -m "🏆 BenTran CV Github IO Resumes ASPE ✨ $(date +%d%m%y) $(date +%H%M) ✨"
+git push origin feature/v2
+git checkout main
+git pull origin main
+git merge feature/v2 --no-ff -m "✨🏆 BenTran CV Github IO Resumes ASPE ✨ $(date +%d%m%y) $(date +%H%M) ✨"
+git push origin main
