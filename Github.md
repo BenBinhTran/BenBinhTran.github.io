@@ -101,7 +101,7 @@ git checkout -b feature/v2
 git checkout main
 git pull origin main
 git add .
-git commit -m "🏆 BenTran CV Github IO Resumes ASPE CV ✨ $(date +%d%m%y) $(date +%H%M) ✨"
+git commit -m "🏆 BenTran CV Github IO ASPE CV ✨ $(date +%d%m%y) $(date +%H%M) ✨"
 git push origin feature/v2
 git checkout main
 git pull origin main
