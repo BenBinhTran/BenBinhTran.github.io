@@ -105,5 +105,5 @@ git commit -m "🏆 BenTran CV Github IO ASPE CV ✨ $(date +%d%m%y) $(date +%H%
 git push origin feature/v2
 git checkout main
 git pull origin main
-git merge feature/v2 --no-ff -m "✨🏆 BenTran CV Github IO Resumes ASPE ✨ $(date +%d%m%y) $(date +%H%M) ✨"
+git merge feature/v2 --no-ff -m "✨🏆 BenTran CV Github IO ASPE ✨ $(date +%d%m%y) $(date +%H%M) ✨"
 git push origin main
